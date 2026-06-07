@@ -32,7 +32,26 @@ La page présente les couvertures comme des livres en pré-commande, avec un pri
 indicatif et un bouton `Pré-commander` qui pointe vers le contact email. Remplacez
 ensuite ce lien par une vraie page de paiement si besoin.
 
-## Logo Maison Ipuin
+## Mettre le vrai logo officiel
+
+Le logo affiché (`assets/logo-maison-ipuin.svg`) est une reconstruction
+provisoire. Pour utiliser le **vrai fichier** de la maison d'édition, deux
+options (le fichier doit d'abord être ajouté au dépôt) :
+
+**Option A — utiliser le PNG d'origine (fidélité 100%)**
+
+1. Ajoute ton fichier sous `assets/logo-maison-ipuin.png`.
+2. Dans `index.html`, remplace les `src=".../logo-maison-ipuin.svg"` par
+   `.../logo-maison-ipuin.png` (header, section « La maison », footer, favicon).
+
+**Option B — générer un SVG vectoriel fidèle depuis le PNG**
+
+1. Ajoute ton fichier sous `assets/logo-source.png`.
+2. Lance `bash scripts/trace-logo.sh` : il vectorise le logo et écrit
+   `assets/logo-maison-ipuin.svg` (déjà référencé partout). Aucun autre
+   changement nécessaire.
+
+## Logo Maison Ipuin (historique)
 
 Le header utilise pour l'instant un logo texte provisoire `MI`. Quand le logo
 officiel sera disponible, ajoutez-le au dépôt et remplacez ce bloc dans
