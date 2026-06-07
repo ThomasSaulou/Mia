@@ -7,6 +7,13 @@ Site statique pour présenter les livres pour enfants de Mia, par exemple
 
 - `index.html` : contenu de la page.
 - `styles.css` : couleurs, mise en page responsive et police d'affichage.
+- `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
+
+## Livres affichés
+
+La page présente les couvertures comme des livres à acheter, avec un prix
+indicatif et un bouton `Acheter` qui pointe vers le contact email. Remplacez
+ensuite ce lien par une vraie page de paiement si besoin.
 
 ## Police Cubano Spark
 
