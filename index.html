@@ -8,6 +8,12 @@
       content="Maison Ipuin édite la collection Mia, des livres pour enfants autour de Biarritz, Anglet et du Pays basque."
     >
     <title>Maison Ipuin - Collection Mia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -30,12 +36,18 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">Maison d'édition jeunesse</p>
-          <h1 id="hero-title">Maison Ipuin présente Mia</h1>
+          <h1 id="hero-title">
+            Des histoires <span class="accent">illustrées</span> au cœur du Pays basque
+          </h1>
           <p class="intro">
-            Une collection de livres illustrés pour enfants, pensée comme un
-            catalogue clair, élégant et facile à parcourir.
+            Maison Ipuin édite la collection <strong>Mia</strong> : des livres
+            tendres et colorés qui font voyager les enfants de Biarritz à
+            Espelette, une ville après l'autre.
           </p>
-          <a class="button" href="#livres">Découvrir le catalogue</a>
+          <div class="hero-actions">
+            <a class="button" href="#livres">Découvrir le catalogue</a>
+            <a class="button ghost" href="#histoire">La maison</a>
+          </div>
         </div>
 
         <article class="hero-product" aria-label="Livre mis en avant Mia à Biarritz">
@@ -56,8 +68,14 @@
       </section>
 
       <section id="livres" class="section" aria-labelledby="books-title">
-        <p class="eyebrow">Catalogue</p>
-        <h2 id="books-title">La collection Mia</h2>
+        <div class="section-head">
+          <p class="eyebrow">Catalogue</p>
+          <h2 id="books-title">La collection Mia</h2>
+          <p>
+            Chaque livre suit Mia dans une nouvelle ville du Pays basque. Tous
+            les titres sont disponibles en pré-commande.
+          </p>
+        </div>
 
         <div class="book-grid">
           <article class="book-card">
@@ -238,23 +256,25 @@
         </div>
       </section>
 
-      <section id="histoire" class="story section" aria-labelledby="story-title">
-        <div>
-          <p class="eyebrow">La maison</p>
-          <h2 id="story-title">Une ligne éditoriale simple et locale</h2>
+      <section id="histoire" class="section">
+        <div class="story">
+          <div>
+            <p class="eyebrow">La maison</p>
+            <h2 id="story-title">Une ligne éditoriale simple et locale</h2>
+          </div>
+          <p>
+            Maison Ipuin accompagne des histoires jeunesse accessibles, ancrées
+            dans les lieux et pensées pour les familles. Des illustrations
+            chaleureuses, un texte tendre, et le Pays basque comme terrain de jeu.
+          </p>
         </div>
-        <p>
-          Maison Ipuin accompagne des histoires jeunesse accessibles, ancrées
-          dans les lieux et pensées pour les familles. Le logo officiel pourra
-          être ajouté dès qu'il sera disponible.
-        </p>
       </section>
     </main>
 
     <footer id="contact" class="footer">
       <div>
         <strong>Maison Ipuin</strong>
-        <p>Pour pré-commander un livre, envoyez le titre souhaité par email.</p>
+        <p>Pour pré-commander un livre, envoyez-nous le titre souhaité par email.</p>
       </div>
       <a href="mailto:bonjour@example.com?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">bonjour@example.com</a>
     </footer>

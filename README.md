@@ -6,11 +6,21 @@ la collection de livres jeunesse **Mia**.
 ## Fichiers
 
 - `index.html` : contenu de la page.
-- `styles.css` : design blanc/noir, mise en page responsive et grille catalogue.
+- `styles.css` : design chaleureux (crème, terracotta, turquoise), mise en page
+  responsive et grille catalogue.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
 
-Le style typographique utilise une pile proche de Medium : `Charter` en priorité
-pour le texte éditorial, puis des polices serif système en fallback.
+## Direction artistique
+
+La palette et la typographie sont inspirées des couvertures Mia :
+
+- **Couleurs** : crème en fond, terracotta (la robe de Mia) pour les actions,
+  turquoise océan en accent et jaune soleil pour les touches lumineuses.
+- **Typographie** : `Fraunces` (serif expressive) pour les titres et
+  `Nunito Sans` (sans humaniste) pour le texte et les boutons, chargées via
+  Google Fonts, avec des polices système en fallback.
+- **Composants** : boutons arrondis « pill » avec dégradé et léger relief au
+  survol, cartes livres en papier crème avec ombre douce, en-tête flottant.
 
 ## Livres affichés
 
