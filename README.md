@@ -61,3 +61,23 @@ officiel sera disponible, ajoutez-le au dépôt et remplacez ce bloc dans
 
 Dans les réglages GitHub du dépôt, activez **Pages** avec la branche `main` et le
 dossier racine (`/`). GitHub servira automatiquement `index.html`.
+
+### Domaine personnalisé
+
+Le fichier `CNAME` configure GitHub Pages pour servir le site sur :
+
+- `https://maisonipuin.fr`
+
+Chez Namecheap, configurez les DNS du domaine avec :
+
+| Type | Host | Value |
+| --- | --- | --- |
+| A Record | `@` | `185.199.108.153` |
+| A Record | `@` | `185.199.109.153` |
+| A Record | `@` | `185.199.110.153` |
+| A Record | `@` | `185.199.111.153` |
+| CNAME Record | `www` | `thomassaulou.github.io` |
+
+La propagation DNS peut prendre de quelques minutes à 24 heures. Une fois le
+domaine reconnu dans GitHub Pages, activez **Enforce HTTPS** si l'option n'est
+pas déjà cochée.
