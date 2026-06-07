@@ -8,6 +8,7 @@ la collection de livres jeunesse **Mia**.
 - `index.html` : contenu de la page + petit script d'apparition au défilement.
 - `styles.css` : design éditorial épuré (Apple x Medium), mise en page
   responsive et grille catalogue.
+- `format-livre-kdp.md` : décision de format pour les premiers livres KDP.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
 - `skills/frontend-design/SKILL.md` : skill de design front suivi pour la refonte.
 
@@ -31,7 +32,9 @@ touches pour garder l'esprit jeunesse.
 La page présente les couvertures comme des livres en pré-commande, avec un prix
 indicatif et un bouton `Pré-commander`. Le hero met en avant un visuel
 « collection » (plusieurs couvertures en éventail) plutôt qu'un seul livre, pour
-ne pas faire doublon avec la première carte du catalogue.
+ne pas faire doublon avec la première carte du catalogue. Le catalogue affiche
+aussi le format retenu pour les premiers tests : 15,24 x 15,24 cm, 24 pages,
+intérieur couleur, broché KDP.
 
 ## Pré-commande : collecte des emails
 
