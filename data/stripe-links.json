@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-06-07T15:26:40.080Z",
+  "price": {
+    "currency": "eur",
+    "unitAmount": 999,
+    "display": "9,99 €"
+  },
+  "links": [
+    {
+      "slug": "mia-a-biarritz",
+      "title": "Mia à Biarritz",
+      "url": "https://buy.stripe.com/28E00i38ifQN4Ax0Wd0co00",
+      "productId": "prod_Uf2gU41MZspiGb",
+      "priceId": "price_1TfiakCP2nM2jUVd1RzcLmzZ",
+      "paymentLinkId": "plink_1TfiakCP2nM2jUVdlQxC9tpQ"
+    },
+    {
+      "slug": "mia-a-anglet",
+      "title": "Mia à Anglet",
+      "url": "https://buy.stripe.com/cNibJ08sC5c99UR0Wd0co01",
+      "productId": "prod_Uf2g51ErxtpF0r",
+      "priceId": "price_1TfialCP2nM2jUVdKD2Vbx3Y",
+      "paymentLinkId": "plink_1TfialCP2nM2jUVdoMoX6tmN"
+    },
+    {
+      "slug": "mia-a-saint-jean-de-luz",
+      "title": "Mia à Saint-Jean-de-Luz",
+      "url": "https://buy.stripe.com/5kQbJ06kueMJ7MJ34l0co02",
+      "productId": "prod_Uf2gtg5bMbYBj8",
+      "priceId": "price_1TfiamCP2nM2jUVd0SzJZYup",
+      "paymentLinkId": "plink_1TfiamCP2nM2jUVdxAVZZhkT"
+    },
+    {
+      "slug": "mia-a-bidart",
+      "title": "Mia à Bidart",
+      "url": "https://buy.stripe.com/00waEWcIS4858QN0Wd0co03",
+      "productId": "prod_Uf2glceFiR30Of",
+      "priceId": "price_1TfianCP2nM2jUVd1HsZOfOb",
+      "paymentLinkId": "plink_1TfianCP2nM2jUVdM9rCgmoQ"
+    },
+    {
+      "slug": "mia-a-saint-jean-pied-de-port",
+      "title": "Mia à Saint-Jean-Pied-de-Port",
+      "url": "https://buy.stripe.com/aFaaEW10a8olaYVawN0co04",
+      "productId": "prod_Uf2g3MgsvC7CDi",
+      "priceId": "price_1TfiaoCP2nM2jUVd0RBxO9su",
+      "paymentLinkId": "plink_1TfiaoCP2nM2jUVdS2bS6vd4"
+    },
+    {
+      "slug": "mia-a-hendaye",
+      "title": "Mia à Hendaye",
+      "url": "https://buy.stripe.com/bJe28q24efQNc2Z48p0co05",
+      "productId": "prod_Uf2gXNh7Mu3kx3",
+      "priceId": "price_1TfiaoCP2nM2jUVdKHD2MQFo",
+      "paymentLinkId": "plink_1TfiapCP2nM2jUVdyRAZJYep"
+    },
+    {
+      "slug": "mia-a-cambo-les-bains",
+      "title": "Mia à Cambo-les-Bains",
+      "url": "https://buy.stripe.com/14A6oGgZ8dIF0khbAR0co06",
+      "productId": "prod_Uf2gIV4ruWwW6n",
+      "priceId": "price_1TfiapCP2nM2jUVdWhsrmL2H",
+      "paymentLinkId": "plink_1TfiapCP2nM2jUVd7tohdd6G"
+    },
+    {
+      "slug": "mia-a-ainhoa",
+      "title": "Mia à Ainhoa",
+      "url": "https://buy.stripe.com/7sY5kCaAK0VTffb34l0co07",
+      "productId": "prod_Uf2g39VnngHgTQ",
+      "priceId": "price_1TfiaqCP2nM2jUVdS5zN3DS4",
+      "paymentLinkId": "plink_1TfiaqCP2nM2jUVddGzhANqw"
+    },
+    {
+      "slug": "mia-a-sare",
+      "title": "Mia à Sare",
+      "url": "https://buy.stripe.com/6oU00i5gq5c99URawN0co08",
+      "productId": "prod_Uf2g3f0ekAuFrX",
+      "priceId": "price_1TfiarCP2nM2jUVdbEZ4jKQB",
+      "paymentLinkId": "plink_1TfiarCP2nM2jUVdI6E6nMDs"
+    },
+    {
+      "slug": "mia-a-hasparren",
+      "title": "Mia à Hasparren",
+      "url": "https://buy.stripe.com/28EbJ0eR00VTd7320h0co09",
+      "productId": "prod_Uf2gsgd1PGEm1V",
+      "priceId": "price_1TfiasCP2nM2jUVdejYGpLuQ",
+      "paymentLinkId": "plink_1TfiasCP2nM2jUVd8TJYGCmN"
+    },
+    {
+      "slug": "mia-a-la-bastide-clairence",
+      "title": "Mia à La Bastide-Clairence",
+      "url": "https://buy.stripe.com/cNidR838i5c9eb7gVb0co0a",
+      "productId": "prod_Uf2g1jzqTX5mUY",
+      "priceId": "price_1TfiasCP2nM2jUVdO41bu7MR",
+      "paymentLinkId": "plink_1TfiatCP2nM2jUVdsACvyQfv"
+    },
+    {
+      "slug": "mia-a-urrugne",
+      "title": "Mia à Urrugne",
+      "url": "https://buy.stripe.com/7sYaEW8sC3416IF9sJ0co0b",
+      "productId": "prod_Uf2guCJh2r1ukD",
+      "priceId": "price_1TfiatCP2nM2jUVdbBzbwGgW",
+      "paymentLinkId": "plink_1TfiauCP2nM2jUVdCUhxEizM"
+    },
+    {
+      "slug": "mia-a-ciboure",
+      "title": "Mia à Ciboure",
+      "url": "https://buy.stripe.com/14A9AS4cm0VT9URdIZ0co0c",
+      "productId": "prod_Uf2gM8D0CtWXST",
+      "priceId": "price_1TfiauCP2nM2jUVdFkijNMTg",
+      "paymentLinkId": "plink_1TfiavCP2nM2jUVdpa1QjKQo"
+    },
+    {
+      "slug": "mia-a-guethary",
+      "title": "Mia à Guéthary",
+      "url": "https://buy.stripe.com/8x29AS6kuawt3wt6gx0co0d",
+      "productId": "prod_Uf2gQuVY8wD6rC",
+      "priceId": "price_1TfiavCP2nM2jUVd0z6SOX6Q",
+      "paymentLinkId": "plink_1TfiawCP2nM2jUVdN6w3O1Yq"
+    },
+    {
+      "slug": "mia-a-bayonne",
+      "title": "Mia à Bayonne",
+      "url": "https://buy.stripe.com/eVq8wO10adIF0kh8oF0co0e",
+      "productId": "prod_Uf2gPhrFgl45M1",
+      "priceId": "price_1TfiawCP2nM2jUVdWd3IFuS3",
+      "paymentLinkId": "plink_1TfiaxCP2nM2jUVddF8wLgno"
+    },
+    {
+      "slug": "mia-a-espelette",
+      "title": "Mia à Espelette",
+      "url": "https://buy.stripe.com/4gMcN4fV4eMJffb0Wd0co0f",
+      "productId": "prod_Uf2gK4bD8PXXSh",
+      "priceId": "price_1TfiaxCP2nM2jUVdYphsBqGt",
+      "paymentLinkId": "plink_1TfiaxCP2nM2jUVdkWF6dHpv"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "currency": "eur",
+  "unitAmount": 999,
+  "collection": "Mia",
+  "format": "15,24 x 15,24 cm",
+  "pages": "24 pages",
+  "interior": "couleur",
+  "shippingAddressCountries": ["FR"],
+  "adjustableQuantity": {
+    "enabled": true,
+    "minimum": 1,
+    "maximum": 10
+  },
+  "books": [
+    {
+      "slug": "mia-a-biarritz",
+      "title": "Mia à Biarritz",
+      "description": "Mia part à la découverte de l'océan, du Rocher de la Vierge et des ruelles colorées."
+    },
+    {
+      "slug": "mia-a-anglet",
+      "title": "Mia à Anglet",
+      "description": "Une aventure entre plages, forêt et promenades en famille."
+    },
+    {
+      "slug": "mia-a-saint-jean-de-luz",
+      "title": "Mia à Saint-Jean-de-Luz",
+      "description": "Un voyage doux au bord de la baie et dans les rues animées."
+    },
+    {
+      "slug": "mia-a-bidart",
+      "title": "Mia à Bidart",
+      "description": "Une escapade pleine de vagues, de sentiers et de soleil."
+    },
+    {
+      "slug": "mia-a-saint-jean-pied-de-port",
+      "title": "Mia à Saint-Jean-Pied-de-Port",
+      "description": "Une promenade colorée au pied des montagnes basques."
+    },
+    {
+      "slug": "mia-a-hendaye",
+      "title": "Mia à Hendaye",
+      "description": "Une histoire lumineuse entre grande plage et horizon bleu."
+    },
+    {
+      "slug": "mia-a-cambo-les-bains",
+      "title": "Mia à Cambo-les-Bains",
+      "description": "Une découverte paisible entre jardins, collines et maisons basques."
+    },
+    {
+      "slug": "mia-a-ainhoa",
+      "title": "Mia à Ainhoa",
+      "description": "Une aventure dans un village plein de charme et de couleurs."
+    },
+    {
+      "slug": "mia-a-sare",
+      "title": "Mia à Sare",
+      "description": "Une balade tendre au cœur des paysages et traditions du Pays basque."
+    },
+    {
+      "slug": "mia-a-hasparren",
+      "title": "Mia à Hasparren",
+      "description": "Une visite joyeuse entre rues de village et collines verdoyantes."
+    },
+    {
+      "slug": "mia-a-la-bastide-clairence",
+      "title": "Mia à La Bastide-Clairence",
+      "description": "Une histoire comme une promenade dans un village de caractère."
+    },
+    {
+      "slug": "mia-a-urrugne",
+      "title": "Mia à Urrugne",
+      "description": "Une aventure entre océan, campagne et grands espaces."
+    },
+    {
+      "slug": "mia-a-ciboure",
+      "title": "Mia à Ciboure",
+      "description": "Une sortie au port, entre maisons colorées et bateaux."
+    },
+    {
+      "slug": "mia-a-guethary",
+      "title": "Mia à Guéthary",
+      "description": "Une petite aventure face aux vagues et aux couchers de soleil."
+    },
+    {
+      "slug": "mia-a-bayonne",
+      "title": "Mia à Bayonne",
+      "description": "Une découverte de la ville, de ses couleurs et de ses quais."
+    },
+    {
+      "slug": "mia-a-espelette",
+      "title": "Mia à Espelette",
+      "description": "Une histoire parfumée de piments rouges, de ruelles et de sourires."
+    }
+  ]
+}

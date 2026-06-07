@@ -467,6 +467,74 @@ h1 .accent {
   font-size: clamp(1.02rem, 1.7vw, 1.18rem);
 }
 
+/* ---------- Infos livre ---------- */
+.format-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.9fr);
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+  align-items: start;
+  margin: calc(clamp(2.5rem, 5vw, 3.6rem) * -0.35) 0 clamp(2.2rem, 5vw, 3.4rem);
+  padding: clamp(1.25rem, 3vw, 1.8rem);
+  background: color-mix(in srgb, var(--paper) 84%, var(--bg-elev));
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xs);
+}
+
+.format-card h3 {
+  margin-bottom: 0.45rem;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  line-height: 1.12;
+}
+
+.format-card p {
+  margin-bottom: 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.format-label {
+  margin-bottom: 0.7rem;
+  color: var(--terracotta-deep);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.format-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 0;
+}
+
+.format-list div {
+  padding: 0.95rem 1rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius);
+}
+
+.format-list dt {
+  margin-bottom: 0.25rem;
+  color: var(--ink-faint);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.format-list dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 /* ---------- Grille catalogue ---------- */
 .book-grid {
   display: grid;
@@ -554,6 +622,10 @@ h1 .accent {
 .buy-link::after {
   content: "→";
   transition: transform 220ms var(--ease);
+}
+
+.stripe-ready .buy-link::after {
+  content: "↗";
 }
 
 .buy-link:hover,
@@ -874,6 +946,10 @@ h1 .accent {
     grid-template-columns: 1fr;
   }
 
+  .format-card {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     padding: 3rem 0 4rem;
   }
@@ -926,6 +1002,10 @@ h1 .accent {
   .book-grid {
     grid-template-columns: 1fr;
     gap: 2.4rem;
+  }
+
+  .format-list {
+    grid-template-columns: 1fr;
   }
 
   .book-card {
