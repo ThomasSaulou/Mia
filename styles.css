@@ -624,6 +624,10 @@ h1 .accent {
   transition: transform 220ms var(--ease);
 }
 
+.stripe-ready .buy-link::after {
+  content: "↗";
+}
+
 .buy-link:hover,
 .buy-link:focus-visible {
   color: var(--terracotta);

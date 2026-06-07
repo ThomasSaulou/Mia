@@ -9,6 +9,12 @@ la collection de livres jeunesse **Mia**.
 - `styles.css` : design éditorial épuré (Apple x Medium), mise en page
   responsive et grille catalogue.
 - `format-livre-kdp.md` : décision de format pour les premiers livres KDP.
+- `data/stripe-books.json` : catalogue source utilisé pour créer les produits
+  et liens de paiement Stripe.
+- `data/stripe-links.json` : liens Stripe publics utilisés par les boutons du
+  site une fois générés.
+- `scripts/create-stripe-payment-links.mjs` : script local de création des
+  produits, prix et Payment Links Stripe.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
 - `skills/frontend-design/SKILL.md` : skill de design front suivi pour la refonte.
 
@@ -36,31 +42,36 @@ ne pas faire doublon avec la première carte du catalogue. Le catalogue affiche
 aussi le format retenu pour les premiers tests : 15,24 x 15,24 cm, 24 pages,
 intérieur couleur, broché KDP.
 
-## Pré-commande : collecte des emails
+## Vente avec Stripe Payment Links
 
-Au clic sur `Pré-commander`, une fenêtre s'ouvre et demande l'email du visiteur
-(le titre du livre est repris automatiquement). Les adresses sont **rangées dans
-un tableau de bord** ; aucun mail ne part du téléphone du visiteur.
+Le site est prêt pour vendre avec **Stripe Payment Links**, sans backend et sans
+exposer de clé secrète sur GitHub Pages.
 
-Il suffit de brancher un service de formulaire gratuit. Le plus simple est
-[Formspree](https://formspree.io) :
+1. Dans Stripe, créez une clé API restreinte avec les accès nécessaires :
+   `Products` read/write, `Prices` read/write et `Payment Links` read/write.
+2. Depuis le dépôt, lancez le script avec la clé en variable d'environnement :
 
-1. Créez un compte gratuit sur formspree.io.
-2. **New form** → donnez un nom (ex. « Pré-commandes Mia ») → copiez l'URL du
-   formulaire : `https://formspree.io/f/xxxxxxx`.
-3. Dans `index.html`, dans le second bloc `<script>`, collez cette URL :
-
-   ```js
-   var PREORDER_ENDPOINT = "https://formspree.io/f/xxxxxxx";
+   ```bash
+   STRIPE_API_KEY="rk_live_..." node scripts/create-stripe-payment-links.mjs
    ```
 
-C'est tout. Chaque pré-commande envoie `{ email, livre }` à Formspree, qui les
-liste dans votre tableau de bord (exportable en CSV) et peut vous notifier par
-email à chaque nouvelle inscription.
+3. Le script crée ou réutilise les produits, prix et liens Stripe pour les livres
+   listés dans `data/stripe-books.json`.
+4. Il écrit les URLs publiques dans `data/stripe-links.json`.
+5. Déployez le site : les boutons `Pré-commander` redirigeront alors vers Stripe.
 
-> Tant que `PREORDER_ENDPOINT` est vide, la fenêtre s'ouvre mais l'envoi affiche
-> « collecte pas encore activée ». N'importe quel service acceptant un POST JSON
-> fonctionne aussi (Getform, Formspark, Basin, Google Apps Script…).
+Le prix de lancement est configuré à **9,99 €** par livre dans
+`data/stripe-books.json` (`unitAmount: 999`).
+
+> Ne committez jamais de clé Stripe. La clé doit rester dans une variable
+> d'environnement locale. Le fichier `.gitignore` ignore les fichiers `.env`.
+
+### Fallback tant que Stripe n'est pas généré
+
+Tant que `data/stripe-links.json` ne contient pas encore d'URLs Stripe, le clic
+sur `Pré-commander` ouvre une fenêtre de précommande email. Ce fallback peut être
+branché plus tard sur Formspree, Getform, Formspark, Basin ou Google Apps Script
+si besoin.
 
 ## Mettre le vrai logo officiel
 
