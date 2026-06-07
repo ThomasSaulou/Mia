@@ -8,6 +8,7 @@
       content="Maison Ipuin édite la collection Mia, des livres pour enfants autour de Biarritz, Anglet et du Pays basque."
     >
     <title>Maison Ipuin - Collection Mia</title>
+    <link rel="icon" type="image/svg+xml" href="assets/logo-maison-ipuin.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,7 +20,7 @@
   <body>
     <header class="site-header">
       <a class="brand" href="#accueil" aria-label="Accueil Maison Ipuin">
-        <span class="brand-mark" aria-hidden="true">MI</span>
+        <img class="brand-mark" src="assets/logo-maison-ipuin.svg" alt="" width="46" height="46">
         <span>
           <strong>Maison Ipuin</strong>
           <small>Éditions jeunesse</small>
@@ -258,7 +259,14 @@
 
       <section id="histoire" class="section">
         <div class="story reveal">
-          <div>
+          <div class="story-aside">
+            <img
+              class="story-logo"
+              src="assets/logo-maison-ipuin.svg"
+              alt="Logo Maison Ipuin"
+              width="128"
+              height="128"
+            >
             <p class="eyebrow">La maison</p>
             <h2 id="story-title">Une ligne éditoriale simple et locale</h2>
           </div>
@@ -272,9 +280,18 @@
     </main>
 
     <footer id="contact" class="footer reveal">
-      <div>
-        <strong>Maison Ipuin</strong>
-        <p>Pour pré-commander un livre, envoyez-nous le titre souhaité par email.</p>
+      <div class="footer-brand">
+        <img
+          class="footer-logo"
+          src="assets/logo-maison-ipuin.svg"
+          alt=""
+          width="54"
+          height="54"
+        >
+        <div>
+          <strong>Maison Ipuin</strong>
+          <p>Pour pré-commander un livre, envoyez-nous le titre souhaité par email.</p>
+        </div>
       </div>
       <a href="mailto:bonjour@example.com?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">Nous écrire</a>
     </footer>

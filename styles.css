@@ -133,17 +133,10 @@ a {
 }
 
 .brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  color: var(--paper);
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  background: var(--ink);
-  border-radius: 50%;
+  display: block;
+  width: 2.9rem;
+  height: 2.9rem;
+  flex-shrink: 0;
 }
 
 .brand strong,
@@ -539,6 +532,18 @@ h1 .accent {
   align-items: start;
 }
 
+.story-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.story-logo {
+  width: clamp(5.5rem, 12vw, 8rem);
+  height: auto;
+}
+
 .story h2 {
   margin: 0;
   font-size: clamp(1.9rem, 4vw, 3rem);
@@ -563,6 +568,18 @@ h1 .accent {
   margin-block: clamp(3rem, 7vw, 5rem) 2.5rem;
   padding-top: clamp(2.5rem, 5vw, 3.5rem);
   border-top: 1px solid var(--line);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  width: 3.4rem;
+  height: 3.4rem;
+  flex-shrink: 0;
 }
 
 .footer strong {
