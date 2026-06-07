@@ -292,8 +292,15 @@
       <a href="mailto:bonjour@example.com?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">Nous écrire</a>
     </footer>
 
-    <dialog id="preorder" class="modal" aria-labelledby="preorder-title">
-      <form id="preorder-form" class="modal-card">
+    <div id="preorder" class="modal" hidden>
+      <div class="modal-overlay" data-close></div>
+      <form
+        id="preorder-form"
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="preorder-title"
+      >
         <button type="button" class="modal-close" data-close aria-label="Fermer la fenêtre">&times;</button>
         <p class="eyebrow">Pré-commande</p>
         <h2 id="preorder-title">Réservez votre exemplaire</h2>
@@ -309,6 +316,7 @@
             type="email"
             required
             autocomplete="email"
+            inputmode="email"
             placeholder="vous@exemple.com"
           >
           <input type="hidden" name="livre" id="preorder-book-field">
@@ -316,7 +324,7 @@
         </div>
         <p class="modal-status" id="preorder-status" role="status" aria-live="polite"></p>
       </form>
-    </dialog>
+    </div>
 
     <script>
       (function () {
@@ -348,14 +356,15 @@
 
       /* --- Pré-commande : collecte d'email --- */
       (function () {
-        var dialog = document.getElementById("preorder");
-        if (!dialog) return;
+        var modal = document.getElementById("preorder");
+        if (!modal) return;
 
-        // === Configuration ===
-        // Pour collecter réellement les emails, créez un formulaire (ex. Formspree,
-        // gratuit) et collez son URL ci-dessous. Voir le README.
+        // ===================== Configuration =====================
+        // Collez ici l'URL de votre formulaire de collecte (Formspree, Getform,
+        // Google Apps Script…). Les emails arrivent alors dans un tableau de bord,
+        // sans qu'aucun mail ne parte du téléphone du visiteur. Voir le README.
         var PREORDER_ENDPOINT = ""; // ex : "https://formspree.io/f/xxxxxxx"
-        var CONTACT_EMAIL = "bonjour@example.com";
+        // =========================================================
 
         var form = document.getElementById("preorder-form");
         var fields = document.getElementById("preorder-fields");
@@ -365,7 +374,7 @@
         var status = document.getElementById("preorder-status");
         var lastFocus = null;
 
-        function openDialog(book) {
+        function openModal(book) {
           lastFocus = document.activeElement;
           status.textContent = "";
           status.className = "modal-status";
@@ -373,13 +382,19 @@
           form.reset();
           bookField.value = book || "";
           bookLabel.textContent = book || "ce livre";
-          if (typeof dialog.showModal === "function") dialog.showModal();
-          else dialog.setAttribute("open", "");
-          setTimeout(function () { emailInput.focus(); }, 60);
+          modal.hidden = false;
+          document.body.style.overflow = "hidden";
+          // double rAF pour déclencher la transition d'ouverture
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () { modal.classList.add("is-open"); });
+          });
+          setTimeout(function () { emailInput.focus(); }, 80);
         }
 
-        function closeDialog() {
-          if (dialog.open) dialog.close();
+        function closeModal() {
+          modal.classList.remove("is-open");
+          document.body.style.overflow = "";
+          setTimeout(function () { modal.hidden = true; }, 220);
           if (lastFocus && lastFocus.focus) lastFocus.focus();
         }
 
@@ -391,14 +406,14 @@
             var title = card && card.querySelector("h3")
               ? card.querySelector("h3").textContent.trim()
               : "";
-            openDialog(title);
+            openModal(title);
             return;
           }
-          if (e.target.closest("[data-close]")) closeDialog();
+          if (e.target.closest("[data-close]")) closeModal();
         });
 
-        dialog.addEventListener("click", function (e) {
-          if (e.target === dialog) closeDialog();
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && !modal.hidden) closeModal();
         });
 
         form.addEventListener("submit", function (e) {
@@ -412,47 +427,37 @@
           }
           var book = bookField.value;
 
-          if (PREORDER_ENDPOINT) {
-            var submitBtn = form.querySelector('button[type="submit"]');
-            submitBtn.disabled = true;
-            status.textContent = "Envoi en cours…";
-            status.className = "modal-status";
-            fetch(PREORDER_ENDPOINT, {
-              method: "POST",
-              headers: {
-                Accept: "application/json",
-                "Content-Type": "application/json"
-              },
-              body: JSON.stringify({ email: email, livre: book })
-            })
-              .then(function (r) {
-                if (!r.ok) throw new Error("bad status");
-                fields.hidden = true;
-                status.textContent =
-                  "Merci ! Nous vous préviendrons dès la sortie de " +
-                  (book || "ce livre") + ".";
-                status.className = "modal-status is-ok";
-              })
-              .catch(function () {
-                status.textContent =
-                  "Une erreur est survenue. Réessayez ou écrivez-nous.";
-                status.className = "modal-status is-error";
-              })
-              .finally(function () { submitBtn.disabled = false; });
-          } else {
-            // Sans backend configuré : on ouvre le client mail du visiteur.
-            var subject = encodeURIComponent("Pré-commande : " + (book || "livre Mia"));
-            var body = encodeURIComponent(
-              "Bonjour,\n\nJe souhaite être prévenu(e) de la sortie de " +
-              (book || "ce livre") + ".\nMon email : " + email + "\n\nMerci !"
-            );
-            window.location.href =
-              "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
-            fields.hidden = true;
+          if (!PREORDER_ENDPOINT) {
             status.textContent =
-              "Votre logiciel de mail va s'ouvrir pour confirmer votre intérêt.";
-            status.className = "modal-status is-ok";
+              "La collecte n'est pas encore activée. Réessayez bientôt !";
+            status.className = "modal-status is-error";
+            return;
           }
+
+          var submitBtn = form.querySelector('button[type="submit"]');
+          submitBtn.disabled = true;
+          status.textContent = "Envoi en cours…";
+          status.className = "modal-status";
+
+          fetch(PREORDER_ENDPOINT, {
+            method: "POST",
+            headers: { Accept: "application/json", "Content-Type": "application/json" },
+            body: JSON.stringify({ email: email, livre: book })
+          })
+            .then(function (r) {
+              if (!r.ok) throw new Error("bad status");
+              fields.hidden = true;
+              status.textContent =
+                "Merci ! Nous vous préviendrons dès la sortie de " +
+                (book || "ce livre") + ".";
+              status.className = "modal-status is-ok";
+            })
+            .catch(function () {
+              status.textContent =
+                "Une erreur est survenue. Merci de réessayer.";
+              status.className = "modal-status is-error";
+            })
+            .finally(function () { submitBtn.disabled = false; });
         });
       })();
     </script>

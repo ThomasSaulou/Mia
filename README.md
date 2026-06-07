@@ -36,27 +36,28 @@ ne pas faire doublon avec la première carte du catalogue.
 ## Pré-commande : collecte des emails
 
 Au clic sur `Pré-commander`, une fenêtre s'ouvre et demande l'email du visiteur
-(le titre du livre concerné est repris automatiquement).
+(le titre du livre est repris automatiquement). Les adresses sont **rangées dans
+un tableau de bord** ; aucun mail ne part du téléphone du visiteur.
 
-Par défaut, sans backend configuré, la fenêtre ouvre le logiciel mail du
-visiteur avec un message pré-rempli vers `CONTACT_EMAIL`.
+Il suffit de brancher un service de formulaire gratuit. Le plus simple est
+[Formspree](https://formspree.io) :
 
-Pour **collecter réellement** les emails (sans logiciel mail côté visiteur),
-branchez un service de formulaire gratuit, par ex. [Formspree](https://formspree.io) :
-
-1. Créez un formulaire sur Formspree et récupérez son URL
-   (`https://formspree.io/f/xxxxxxx`).
-2. Dans `index.html`, en haut du second bloc `<script>`, renseignez les
-   constantes :
+1. Créez un compte gratuit sur formspree.io.
+2. **New form** → donnez un nom (ex. « Pré-commandes Mia ») → copiez l'URL du
+   formulaire : `https://formspree.io/f/xxxxxxx`.
+3. Dans `index.html`, dans le second bloc `<script>`, collez cette URL :
 
    ```js
    var PREORDER_ENDPOINT = "https://formspree.io/f/xxxxxxx";
-   var CONTACT_EMAIL = "votre@email.fr";
    ```
 
-3. C'est tout : chaque pré-commande enverra `{ email, livre }` au service, qui
-   stocke et vous notifie. (Tout autre service acceptant un POST JSON fonctionne :
-   Getform, Formspark, Google Apps Script, etc.)
+C'est tout. Chaque pré-commande envoie `{ email, livre }` à Formspree, qui les
+liste dans votre tableau de bord (exportable en CSV) et peut vous notifier par
+email à chaque nouvelle inscription.
+
+> Tant que `PREORDER_ENDPOINT` est vide, la fenêtre s'ouvre mais l'envoi affiche
+> « collecte pas encore activée ». N'importe quel service acceptant un POST JSON
+> fonctionne aussi (Getform, Formspark, Basin, Google Apps Script…).
 
 ## Mettre le vrai logo officiel
 
