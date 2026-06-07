@@ -1,12 +1,12 @@
-# Mia
+# Maison Ipuin - Collection Mia
 
-Site statique pour présenter les livres pour enfants de Mia, par exemple
-**Mia à Biarritz** et **Mia à Anglet**.
+Site statique de la maison d'édition **Maison Ipuin** pour présenter et vendre
+la collection de livres jeunesse **Mia**.
 
 ## Fichiers
 
 - `index.html` : contenu de la page.
-- `styles.css` : couleurs, mise en page responsive et police d'affichage.
+- `styles.css` : design blanc/noir, mise en page responsive et grille catalogue.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
 
 ## Livres affichés
@@ -15,25 +15,11 @@ La page présente les couvertures comme des livres à acheter, avec un prix
 indicatif et un bouton `Acheter` qui pointe vers le contact email. Remplacez
 ensuite ce lien par une vraie page de paiement si besoin.
 
-## Police Cubano Spark
+## Logo Maison Ipuin
 
-La page utilise `Cubano Spark` en priorité pour les titres :
-
-```css
-font-family: "Cubano Spark", "Cubano", "Cooper Black", "Arial Black", sans-serif;
-```
-
-Pour afficher exactement cette police sur tous les appareils, ajoutez le fichier
-webfont sous licence dans le dépôt, puis remplacez la règle `@font-face` de
-`styles.css` par un chargement du fichier, par exemple :
-
-```css
-@font-face {
-  font-family: "Cubano Spark";
-  src: url("assets/fonts/cubano-spark.woff2") format("woff2");
-  font-display: swap;
-}
-```
+Le header utilise pour l'instant un logo texte provisoire `MI`. Quand le logo
+officiel sera disponible, ajoutez-le au dépôt et remplacez ce bloc dans
+`index.html`.
 
 ## Publication GitHub Pages
 
