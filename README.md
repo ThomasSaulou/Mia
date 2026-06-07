@@ -5,22 +5,26 @@ la collection de livres jeunesse **Mia**.
 
 ## Fichiers
 
-- `index.html` : contenu de la page.
-- `styles.css` : design chaleureux (crème, terracotta, turquoise), mise en page
+- `index.html` : contenu de la page + petit script d'apparition au défilement.
+- `styles.css` : design éditorial épuré (Apple x Medium), mise en page
   responsive et grille catalogue.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
+- `skills/frontend-design/SKILL.md` : skill de design front suivi pour la refonte.
 
 ## Direction artistique
 
-La palette et la typographie sont inspirées des couvertures Mia :
+Minimalisme éditorial raffiné : le décor reste neutre et clair pour laisser les
+couvertures, très colorées, faire le spectacle. La couleur revient par petites
+touches pour garder l'esprit jeunesse.
 
-- **Couleurs** : crème en fond, terracotta (la robe de Mia) pour les actions,
-  turquoise océan en accent et jaune soleil pour les touches lumineuses.
-- **Typographie** : `Fraunces` (serif expressive) pour les titres et
-  `Nunito Sans` (sans humaniste) pour le texte et les boutons, chargées via
-  Google Fonts, avec des polices système en fallback.
-- **Composants** : boutons arrondis « pill » avec dégradé et léger relief au
-  survol, cartes livres en papier crème avec ombre douce, en-tête flottant.
+- **Couleurs** : fond neutre clair (pas de couleur dominante), texte presque
+  noir chaud, et terracotta (la robe de Mia) en accent ; turquoise pour le focus.
+- **Typographie** : `Fraunces` (serif expressive, en italique pour les accents)
+  pour les titres et `Hanken Grotesk` (sans raffinée) pour le texte et l'UI,
+  chargées via Google Fonts, avec des polices système en fallback.
+- **Détails** : grain papier très discret, filets fins, ombres très douces,
+  boutons « pill » sobres, liens à flèche animée et apparition orchestrée au
+  chargement et au défilement (désactivée si `prefers-reduced-motion`).
 
 ## Livres affichés
 
