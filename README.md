@@ -29,8 +29,34 @@ touches pour garder l'esprit jeunesse.
 ## Livres affichés
 
 La page présente les couvertures comme des livres en pré-commande, avec un prix
-indicatif et un bouton `Pré-commander` qui pointe vers le contact email. Remplacez
-ensuite ce lien par une vraie page de paiement si besoin.
+indicatif et un bouton `Pré-commander`. Le hero met en avant un visuel
+« collection » (plusieurs couvertures en éventail) plutôt qu'un seul livre, pour
+ne pas faire doublon avec la première carte du catalogue.
+
+## Pré-commande : collecte des emails
+
+Au clic sur `Pré-commander`, une fenêtre s'ouvre et demande l'email du visiteur
+(le titre du livre concerné est repris automatiquement).
+
+Par défaut, sans backend configuré, la fenêtre ouvre le logiciel mail du
+visiteur avec un message pré-rempli vers `CONTACT_EMAIL`.
+
+Pour **collecter réellement** les emails (sans logiciel mail côté visiteur),
+branchez un service de formulaire gratuit, par ex. [Formspree](https://formspree.io) :
+
+1. Créez un formulaire sur Formspree et récupérez son URL
+   (`https://formspree.io/f/xxxxxxx`).
+2. Dans `index.html`, en haut du second bloc `<script>`, renseignez les
+   constantes :
+
+   ```js
+   var PREORDER_ENDPOINT = "https://formspree.io/f/xxxxxxx";
+   var CONTACT_EMAIL = "votre@email.fr";
+   ```
+
+3. C'est tout : chaque pré-commande enverra `{ email, livre }` au service, qui
+   stocke et vous notifie. (Tout autre service acceptant un POST JSON fonctionne :
+   Getform, Formspark, Google Apps Script, etc.)
 
 ## Mettre le vrai logo officiel
 
@@ -50,12 +76,6 @@ options (le fichier doit d'abord être ajouté au dépôt) :
 2. Lance `bash scripts/trace-logo.sh` : il vectorise le logo et écrit
    `assets/logo-maison-ipuin.svg` (déjà référencé partout). Aucun autre
    changement nécessaire.
-
-## Logo Maison Ipuin (historique)
-
-Le header utilise pour l'instant un logo texte provisoire `MI`. Quand le logo
-officiel sera disponible, ajoutez-le au dépôt et remplacez ce bloc dans
-`index.html`.
 
 ## Publication GitHub Pages
 
