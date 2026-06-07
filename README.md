@@ -1,6 +1,6 @@
 # Maison Ipuin - Collection Mia
 
-Site statique de la maison d'édition **Maison Ipuin** pour présenter et vendre
+Site statique de la maison d'édition **Maison Ipuin** pour présenter en pré-commande
 la collection de livres jeunesse **Mia**.
 
 ## Fichiers
@@ -9,10 +9,13 @@ la collection de livres jeunesse **Mia**.
 - `styles.css` : design blanc/noir, mise en page responsive et grille catalogue.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
 
+Le style typographique utilise une pile proche de Medium : `Charter` en priorité
+pour le texte éditorial, puis des polices serif système en fallback.
+
 ## Livres affichés
 
-La page présente les couvertures comme des livres à acheter, avec un prix
-indicatif et un bouton `Acheter` qui pointe vers le contact email. Remplacez
+La page présente les couvertures comme des livres en pré-commande, avec un prix
+indicatif et un bouton `Pré-commander` qui pointe vers le contact email. Remplacez
 ensuite ce lien par une vraie page de paiement si besoin.
 
 ## Logo Maison Ipuin
