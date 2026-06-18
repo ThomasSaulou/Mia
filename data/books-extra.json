@@ -1,0 +1,374 @@
+{
+  "mia-a-biarritz": {
+    "city": "Biarritz",
+    "citySlug": "biarritz",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Dans Mia à Biarritz, la petite héroïne découvre la Grande Plage, le Rocher de la Vierge et les ruelles qui descendent vers l'océan. Entre le bruit des vagues et les façades blanches, Mia apprend que sa ville est un lieu de promenades, de vent salé et de regards vers l'horizon. Un album tendre pour les enfants qui grandissent au bord de l'Atlantique.",
+    "highlights": [
+      "Le Rocher de la Vierge et la passerelle au-dessus des rochers",
+      "La Grande Plage et le front de mer animé",
+      "Les ruelles du centre et l'ambiance balnéaire de la Côte basque"
+    ],
+    "cityIntro": "Biarritz, perle de la Côte basque, mêle élégance balnéaire et énergie océanique. Entre surfeurs, falaises et villas du XIXe siècle, la ville offre un décor idéal pour une histoire jeunesse pleine de lumière.",
+    "faq": [
+      {
+        "q": "Quel livre offrir à un enfant de Biarritz ?",
+        "a": "Mia à Biarritz est fait pour lui : l'histoire suit la petite héroïne dans les lieux emblématiques de la ville, avec des illustrations colorées adaptées aux 2-8 ans."
+      },
+      {
+        "q": "Mia à Biarritz convient-il comme cadeau de naissance ?",
+        "a": "Oui, c'est l'un des cadeaux les plus personnels pour une famille biarrote : un livre qui parle de chez eux, à lire ensemble dès les premiers mois."
+      },
+      {
+        "q": "Quel format et quel prix ?",
+        "a": "15,24 x 15,24 cm, 24 pages couleur, broché. Prix de lancement : 9,99 € en pré-commande sur maisonipuin.fr."
+      }
+    ],
+    "relatedSlugs": ["mia-a-anglet", "mia-a-bidart", "mia-a-bayonne"]
+  },
+  "mia-a-anglet": {
+    "city": "Anglet",
+    "citySlug": "anglet",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Anglet emmène les jeunes lecteurs entre les plages de sable fin, les pins de la Chambre d'Amour et les sentiers qui relient la côte à la ville. C'est une histoire de famille, de nature et de soleil, dans une commune où l'océan est partout. Parfait pour les enfants qui aiment courir sur la dune et écouter les vagues.",
+    "highlights": [
+      "Les plages d'Anglet et la côte sauvage",
+      "La forêt et les promenades en famille",
+      "Le lien entre océan, dune et quartiers résidentiels"
+    ],
+    "cityIntro": "Anglet s'étire entre Biarritz et Bayonne, portée par onze plages et une nature généreuse. Ville sportive et familiale, elle mêle surf, pins maritimes et art de vivre basque.",
+    "faq": [
+      {
+        "q": "Existe-t-il un livre enfant sur Anglet ?",
+        "a": "Oui : Mia à Anglet, de la collection Mia publiée par Maison Ipuin. Un album illustré pour découvrir la commune en compagnie de la petite héroïne."
+      },
+      {
+        "q": "Pour quel âge est ce livre ?",
+        "a": "De 2 à 8 ans environ : texte court à lire à voix haute et grandes illustrations colorées."
+      }
+    ],
+    "relatedSlugs": ["mia-a-biarritz", "mia-a-bayonne", "mia-a-bidart"]
+  },
+  "mia-a-saint-jean-de-luz": {
+    "city": "Saint-Jean-de-Luz",
+    "citySlug": "saint-jean-de-luz",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "À Saint-Jean-de-Luz, Mia arpente la baie abritée, les rues où l'on flâne et le port où les bateaux se balancent doucement. L'histoire capture l'atmosphère unique de cette ville de pêche devenue station balnéaire : douceur, couleurs et horizon maritime. Un livre cadeau idéal pour les familles luziennes.",
+    "highlights": [
+      "La baie de Saint-Jean-de-Luz et la grande plage",
+      "Les rues animées du centre historique",
+      "L'ambiance portuaire et les traditions maritimes"
+    ],
+    "cityIntro": "Saint-Jean-de-Luz, au cœur du Basque maritime, séduit par sa baie fermée et ses maisons à colombages. Ville de pêche et de fêtes, elle garde une âme authentique entre océan et montagnes.",
+    "faq": [
+      {
+        "q": "Quel livre pour un enfant de Saint-Jean-de-Luz ?",
+        "a": "Mia à Saint-Jean-de-Luz raconte la ville à travers les yeux d'une petite fille. C'est l'idée cadeau locale par excellence."
+      },
+      {
+        "q": "Ce livre est-il en français ?",
+        "a": "Oui, entièrement en français, édité par Maison Ipuin, maison d'édition jeunesse du Pays basque."
+      }
+    ],
+    "relatedSlugs": ["mia-a-ciboure", "mia-a-urrugne", "mia-a-hendaye"]
+  },
+  "mia-a-bidart": {
+    "city": "Bidart",
+    "citySlug": "bidart",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Bidart, c'est l'aventure entre falaises, sentiers côtiers et plages où l'on pose sa serviette. La petite héroïne explore une commune à taille humaine, où l'on passe de la chapelle sur la colline à la promenade en bord de mer. Un album ensoleillé pour les enfants du littoral basque.",
+    "highlights": [
+      "Les plages et le sentier du littoral",
+      "Le village et ses perspectives sur l'océan",
+      "Les promenades en famille entre mer et collines"
+    ],
+    "cityIntro": "Bidart, entre Biarritz et Saint-Jean-de-Luz, est une commune côtière à l'identité forte. Ses plages, sa chapelle et ses vues sur l'océan en font un cadre parfait pour une histoire jeunesse lumineuse.",
+    "faq": [
+      {
+        "q": "Où trouver un livre enfant sur Bidart ?",
+        "a": "Sur maisonipuin.fr : Mia à Bidart fait partie de la collection Mia, dédiée aux villes du Pays basque."
+      },
+      {
+        "q": "Peut-on l'offrir à un enfant qui ne vit pas à Bidart ?",
+        "a": "Bien sûr : c'est aussi un beau cadeau pour un enfant qui passe ses vacances ou ses week-ends sur la côte basque."
+      }
+    ],
+    "relatedSlugs": ["mia-a-biarritz", "mia-a-guethary", "mia-a-saint-jean-de-luz"]
+  },
+  "mia-a-saint-jean-pied-de-port": {
+    "city": "Saint-Jean-Pied-de-Port",
+    "citySlug": "saint-jean-pied-de-port",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Dans Mia à Saint-Jean-Pied-de-Port, Mia découvre les rues pavées, la citadelle et les montagnes qui encerclent la ville. Loin de l'océan, c'est une aventure de moyenne montagne, colorée et chaleureuse, ancrée dans la culture basque de l'intérieur des terres. Un livre pour les enfants des vallées.",
+    "highlights": [
+      "La vieille ville et la rue de la Citadelle",
+      "Les montagnes basques en toile de fond",
+      "L'atmosphère de capitale du Basse-Navarre"
+    ],
+    "cityIntro": "Saint-Jean-Pied-de-Port, porte des Pyrénées, est une cité médiévale traversée par le chemin de Saint-Jacques. Ses remparts, sa rivière et ses toits rouges inspirent des histoires de voyage et de racines.",
+    "faq": [
+      {
+        "q": "Y a-t-il un livre Mia pour l'intérieur du Pays basque ?",
+        "a": "Oui : Mia à Saint-Jean-Pied-de-Port représente les vallées et la montagne basque, aux côtés de titres comme Mia à Sare ou Mia à Ainhoa."
+      },
+      {
+        "q": "Ce livre plaît-il aux enfants de 5-8 ans ?",
+        "a": "Oui : le décor montagnard et les ruelles pittoresques captivent les plus grands, tandis que les tout-petits adorent les illustrations."
+      }
+    ],
+    "relatedSlugs": ["mia-a-sare", "mia-a-hasparren", "mia-a-ainhoa"]
+  },
+  "mia-a-hendaye": {
+    "city": "Hendaye",
+    "citySlug": "hendaye",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Hendaye traverse la grande plage de sable fin, longe la baie et regarde vers les montagnes qui ferment l'horizon à la frontière. C'est une histoire lumineuse, entre deux pays et deux cultures, pour les enfants du sud du Pays basque. L'océan y est vaste, le ciel immense.",
+    "highlights": [
+      "La grande plage et la baie d'Hendaye",
+      "La frontière franco-espagnole toute proche",
+      "Les promenades en famille face à l'océan"
+    ],
+    "cityIntro": "Hendaye, à l'extrémité sud du Pays basque français, offre l'une des plus longues plages d'Europe. Ville frontalière entre mer et montagne, elle accueille familles et promeneurs toute l'année.",
+    "faq": [
+      {
+        "q": "Quel livre offrir à un enfant d'Hendaye ?",
+        "a": "Mia à Hendaye : un album illustré qui parle de la grande plage, de la baie et de la vie locale. Idéal en cadeau de naissance ou d'anniversaire."
+      },
+      {
+        "q": "Le livre évoque-t-il l'Espagne voisine ?",
+        "a": "L'histoire reste centrée sur Hendaye et son paysage, avec l'horizon ouvert vers les Pyrénées et la côte basque."
+      }
+    ],
+    "relatedSlugs": ["mia-a-urrugne", "mia-a-saint-jean-de-luz", "mia-a-ciboure"]
+  },
+  "mia-a-cambo-les-bains": {
+    "city": "Cambo-les-Bains",
+    "citySlug": "cambo-les-bains",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Cambo-les-Bains invite à flâner entre jardins, villas Belle Époque et ruelles paisibles. La petite héroïne découvre une ville thermale au rythme doux, où les collines verdoyantes entourent les maisons basques. Un livre apaisant, parfait pour une lecture au calme.",
+    "highlights": [
+      "Les jardins et l'architecture Belle Époque",
+      "Les collines et le cadre verdoyant",
+      "L'atmosphère paisible de la ville thermale"
+    ],
+    "cityIntro": "Cambo-les-Bains, nichée dans la vallée de la Nive, est une ville thermale élégante entourée de collines. Berceau d'Edmond Rostand, elle mêle nature, patrimoine et douceur de vivre basque.",
+    "faq": [
+      {
+        "q": "Existe-t-il un livre enfant sur Cambo-les-Bains ?",
+        "a": "Oui : Mia à Cambo-les-Bains, publié par Maison Ipuin dans la collection Mia."
+      },
+      {
+        "q": "Convient-il pour un enfant de 3 ans ?",
+        "a": "Parfaitement : les images colorées captent l'attention, le texte se lit en quelques minutes au coucher."
+      }
+    ],
+    "relatedSlugs": ["mia-a-hasparren", "mia-a-espelette", "mia-a-la-bastide-clairence"]
+  },
+  "mia-a-ainhoa": {
+    "city": "Ainhoa",
+    "citySlug": "ainhoa",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Ainhoa explore un village classé parmi les plus beaux de France : maisons à colombages rouges et blancs, église au centre, ruelles calmes. C'est une histoire de charme et de couleurs, pour faire aimer les villages du Pays basque aux plus jeunes.",
+    "highlights": [
+      "Les maisons basques à colombages",
+      "Le centre du village classé",
+      "L'atmosphère préservée des villages de l'intérieur"
+    ],
+    "cityIntro": "Ainhoa, village labellisé Plus Beaux Villages de France, est un joyau de la Navarre basque. Ses linteaux sculptés et ses façades rouges et blanches forment un décor de carte postale.",
+    "faq": [
+      {
+        "q": "Pourquoi offrir Mia à Ainhoa ?",
+        "a": "Pour les familles attachées à ce village d'exception : un cadeau qui célèbre un lieu unique du Pays basque."
+      },
+      {
+        "q": "Ce livre est-il adapté comme souvenir de vacances ?",
+        "a": "Oui, beaucoup de familles l'offrent après un séjour à Ainhoa pour prolonger le souvenir."
+      }
+    ],
+    "relatedSlugs": ["mia-a-sare", "mia-a-espelette", "mia-a-saint-jean-pied-de-port"]
+  },
+  "mia-a-sare": {
+    "city": "Sare",
+    "citySlug": "sare",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Dans Mia à Sare, la petite héroïne parcourt un village au pied de la Rhune, entre traditions pastorales et paysages ouverts. L'histoire évoque les fêtes locales, les collines et le lien profond entre les habitants et leur territoire. Un album pour transmettre l'amour du Pays basque intérieur.",
+    "highlights": [
+      "Le village au pied de la Rhune",
+      "Les traditions et paysages basques",
+      "Les promenades entre montagne et vallée"
+    ],
+    "cityIntro": "Sare, au pied de la Rhune, est un village authentique de la Navarre basque. Entre grottes, petit train et traditions séculaires, il incarne le Pays basque de l'intérieur.",
+    "faq": [
+      {
+        "q": "Quel livre pour un enfant de Sare ou des environs ?",
+        "a": "Mia à Sare raconte le village et ses paysages. C'est le cadeau local idéal pour les familles du piémont basque."
+      },
+      {
+        "q": "La collection Mia couvre-t-elle aussi la montagne ?",
+        "a": "Oui : Sare, Ainhoa, Saint-Jean-Pied-de-Port et Hasparren représentent l'intérieur des terres."
+      }
+    ],
+    "relatedSlugs": ["mia-a-ainhoa", "mia-a-espelette", "mia-a-saint-jean-pied-de-port"]
+  },
+  "mia-a-hasparren": {
+    "city": "Hasparren",
+    "citySlug": "hasparren",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Hasparren suit la petite héroïne dans les rues de ce bourg animé du Pays basque intérieur, entre collines verdoyantes et vie locale. C'est une histoire joyeuse, ancrée dans le quotidien d'une commune où l'on se connaît et où la nature n'est jamais loin.",
+    "highlights": [
+      "Le centre-ville et la vie de bourg",
+      "Les collines et le paysage vallonné",
+      "L'ambiance familiale de la Soule"
+    ],
+    "cityIntro": "Hasparren, au cœur de la Soule, est un bourg dynamique entouré de collines. Carrefour économique du Pays basque intérieur, il garde une atmosphère conviviale et rurale.",
+    "faq": [
+      {
+        "q": "Où commander Mia à Hasparren ?",
+        "a": "En pré-commande sur maisonipuin.fr, à 9,99 €. Livraison en France métropolitaine."
+      },
+      {
+        "q": "Ce titre convient-il aux enfants de la Soule ?",
+        "a": "Oui, c'est l'un des livres de la collection pensé pour les familles de l'intérieur, aux côtés de Mia à Sare."
+      }
+    ],
+    "relatedSlugs": ["mia-a-cambo-les-bains", "mia-a-espelette", "mia-a-la-bastide-clairence"]
+  },
+  "mia-a-la-bastide-clairence": {
+    "city": "La Bastide-Clairence",
+    "citySlug": "la-bastide-clairence",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à La Bastide-Clairence invite à une promenade dans un village fondé au XIIIe siècle, avec ses arcades, ses artisans et ses ruelles pavées. L'histoire se lit comme une balade douce, où chaque coin de rue révèle un détail à regarder. Un livre de caractère pour les amoureux des bastides.",
+    "highlights": [
+      "Les arcades et l'architecture médiévale",
+      "Les ruelles pavées et les artisans",
+      "Le charme d'une bastide du Pays basque"
+    ],
+    "cityIntro": "La Bastide-Clairence, fondée en 1312, est une bastide royale au cœur du Pays basque. Ses arcades, ses galeries d'art et son calme en font une destination prisée.",
+    "faq": [
+      {
+        "q": "Existe-t-il un livre sur La Bastide-Clairence pour enfants ?",
+        "a": "Oui : Mia à La Bastide-Clairence, un album illustré de la collection Mia."
+      },
+      {
+        "q": "C'est un bon cadeau pour les visiteurs du village ?",
+        "a": "Excellent : beaucoup de familles l'achètent après une visite pour garder un souvenir lisible."
+      }
+    ],
+    "relatedSlugs": ["mia-a-hasparren", "mia-a-cambo-les-bains", "mia-a-bayonne"]
+  },
+  "mia-a-urrugne": {
+    "city": "Urrugne",
+    "citySlug": "urrugne",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Urrugne explore une commune vaste et variée, entre falaises, campagne et villages dispersés. La petite héroïne y découvre l'océan tout proche, les chemins de campagne et la liberté des grands espaces. Un album pour les enfants qui aiment la nature et le littoral sud-basque.",
+    "highlights": [
+      "Les falaises et le littoral sauvage",
+      "La campagne et les hameaux",
+      "La diversité des paysages de la commune"
+    ],
+    "cityIntro": "Urrugne, au sud de Saint-Jean-de-Luz, mêle littoral escarpé et terres agricoles. Ses falaises, ses villages et sa proximité avec l'Espagne composent un territoire riche et contrasté.",
+    "faq": [
+      {
+        "q": "Quel livre pour un enfant d'Urrugne ?",
+        "a": "Mia à Urrugne : l'histoire locale de la collection Mia, disponible en pré-commande."
+      },
+      {
+        "q": "Peut-on le combiner avec Mia à Hendaye ou Ciboure ?",
+        "a": "Oui, les trois titres forment un beau trio pour les familles du Basque maritime sud."
+      }
+    ],
+    "relatedSlugs": ["mia-a-hendaye", "mia-a-ciboure", "mia-a-saint-jean-de-luz"]
+  },
+  "mia-a-ciboure": {
+    "city": "Ciboure",
+    "citySlug": "ciboure",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "À Ciboure, Mia déambule au bord du port, entre maisons colorées et mâts de bateaux. L'histoire capte la vie maritime de cette ville sœur de Saint-Jean-de-Luz, avec ses quais, ses pêcheurs et ses couchers de soleil sur la baie. Un livre pour les petits amoureux de la mer.",
+    "highlights": [
+      "Le port et les quais animés",
+      "Les maisons colorées face à la baie",
+      "La vie maritime et les bateaux"
+    ],
+    "cityIntro": "Ciboure, face à Saint-Jean-de-Luz, est une ville de marins et d'artistes. Son port, ses fortifications et ses maisons colorées racontent une histoire maritime intense.",
+    "faq": [
+      {
+        "q": "Mia à Ciboure ou Mia à Saint-Jean-de-Luz ?",
+        "a": "Les deux villes sont voisines mais chaque livre a sa personnalité. Pour une famille de Ciboure, Mia à Ciboure est le choix le plus personnel."
+      },
+      {
+        "q": "Quel prix pour ce livre ?",
+        "a": "9,99 € en pré-commande, format 15,24 x 15,24 cm, 24 pages couleur."
+      }
+    ],
+    "relatedSlugs": ["mia-a-saint-jean-de-luz", "mia-a-urrugne", "mia-a-hendaye"]
+  },
+  "mia-a-guethary": {
+    "city": "Guéthary",
+    "citySlug": "guethary",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Guéthary, c'est l'aventure face aux vagues, sur une des plus petites communes du littoral basque. Entre rochers, spots de surf et couchers de soleil, la petite héroïne découvre un village où l'océan est roi. Un album court et intense, comme la côte ici.",
+    "highlights": [
+      "Les vagues et le littoral rocheux",
+      "Le village entre Biarritz et Bidart",
+      "Les couchers de soleil sur l'océan"
+    ],
+    "cityIntro": "Guéthary, minuscule commune entre Biarritz et Bidart, est un haut lieu du surf basque. Ses rochers, ses vagues et son village compact en font un décor unique.",
+    "faq": [
+      {
+        "q": "Y a-t-il un livre enfant sur Guéthary ?",
+        "a": "Oui : Mia à Guéthary, dans la collection Mia de Maison Ipuin."
+      },
+      {
+        "q": "Idéal pour un enfant qui fait du surf ?",
+        "a": "Les familles de surfeurs adorent ce titre : l'océan est au cœur de l'histoire."
+      }
+    ],
+    "relatedSlugs": ["mia-a-bidart", "mia-a-biarritz", "mia-a-saint-jean-de-luz"]
+  },
+  "mia-a-bayonne": {
+    "city": "Bayonne",
+    "citySlug": "bayonne",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Bayonne traverse les quais de la Nive et de l'Adour, les ruelles du Petit Bayonne et les couleurs des festivals. C'est une histoire urbaine et chaleureuse, pour les enfants de l'agglomération capitale du Pays basque. Les fêtes, les ponts et les maisons à colombages y ont leur place.",
+    "highlights": [
+      "Les quais et les ponts sur la Nive",
+      "Le centre historique et les ruelles",
+      "L'ambiance festive et culturelle de la capitale basque"
+    ],
+    "cityIntro": "Bayonne, capitale du Pays basque français, réunit histoire, fêtes et gastronomie. Entre cathédrale, chocolatiers et Fêtes de Bayonne, la ville vibre toute l'année.",
+    "faq": [
+      {
+        "q": "Quel livre offrir à un enfant de Bayonne ?",
+        "a": "Mia à Bayonne est le titre de référence : un album qui parle de la ville aux enfants de 2 à 8 ans."
+      },
+      {
+        "q": "C'est le livre le plus demandé ?",
+        "a": "Avec Mia à Biarritz, c'est l'un des titres les plus populaires de la collection pour les cadeaux locaux."
+      }
+    ],
+    "relatedSlugs": ["mia-a-anglet", "mia-a-biarritz", "mia-a-cambo-les-bains"]
+  },
+  "mia-a-espelette": {
+    "city": "Espelette",
+    "citySlug": "espelette",
+    "department": "Pyrénées-Atlantiques",
+    "descriptionLong": "Mia à Espelette se promène sous les guirlandes de piments séchés, dans les ruelles où le rouge domine. La petite héroïne y découvre un village célèbre pour son épice, ses façades blanches et son marché du vendredi. Une histoire parfumée et joyeuse, emblématique du Pays basque.",
+    "highlights": [
+      "Les piments d'Espelette suspendus aux façades",
+      "Le marché et la vie du village",
+      "Les ruelles blanches et rouges du Labourd"
+    ],
+    "cityIntro": "Espelette, capitale du piment, est un village du Labourd mondialement connu. Ses maisons blanches ornées de guirlandes rouges attirent visiteurs et gourmets.",
+    "faq": [
+      {
+        "q": "Pourquoi Mia à Espelette est-il si populaire ?",
+        "a": "Espelette est l'un des villages les plus photographiés du Pays basque. Le livre permet aux enfants de « posséder » ce décor iconique."
+      },
+      {
+        "q": "Bon cadeau pour un enfant qui aime la cuisine ?",
+        "a": "Oui : les piments et le marché y ont une place, sans être trop complexes pour les jeunes lecteurs."
+      }
+    ],
+    "relatedSlugs": ["mia-a-ainhoa", "mia-a-sare", "mia-a-cambo-les-bains"]
+  }
+}

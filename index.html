@@ -55,6 +55,9 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM summary">
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full summary">
+    <link rel="alternate" type="application/json" href="/products.json" title="Product feed">
 
     <!-- Données structurées (Schema.org) pour Google & moteurs IA -->
     <script type="application/ld+json">
@@ -70,6 +73,12 @@
           "logo": "https://maisonipuin.fr/assets/logo-maison-ipuin.svg",
           "description": "Maison d'édition jeunesse qui publie des livres pour enfants ancrés dans le Pays basque.",
           "areaServed": "Pays basque, France",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "bonjour@maisonipuin.fr",
+            "availableLanguage": "French"
+          },
           "knowsAbout": [
             "livres pour enfants",
             "littérature jeunesse",
@@ -103,22 +112,22 @@
           "name": "Catalogue des livres Mia",
           "numberOfItems": 16,
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "item": { "@type": "Book", "name": "Mia à Biarritz", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-biarritz.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 2, "item": { "@type": "Book", "name": "Mia à Anglet", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-anglet.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 3, "item": { "@type": "Book", "name": "Mia à Saint-Jean-de-Luz", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-saint-jean-de-luz.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 4, "item": { "@type": "Book", "name": "Mia à Bidart", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-bidart.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 5, "item": { "@type": "Book", "name": "Mia à Saint-Jean-Pied-de-Port", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-saint-jean-pied-de-port.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 6, "item": { "@type": "Book", "name": "Mia à Hendaye", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-hendaye.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 7, "item": { "@type": "Book", "name": "Mia à Cambo-les-Bains", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-cambo-les-bains.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 8, "item": { "@type": "Book", "name": "Mia à Ainhoa", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-ainhoa.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 9, "item": { "@type": "Book", "name": "Mia à Sare", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-sare.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 10, "item": { "@type": "Book", "name": "Mia à Hasparren", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-hasparren.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 11, "item": { "@type": "Book", "name": "Mia à La Bastide-Clairence", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-la-bastide-clairence.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 12, "item": { "@type": "Book", "name": "Mia à Urrugne", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-urrugne.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 13, "item": { "@type": "Book", "name": "Mia à Ciboure", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-ciboure.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 14, "item": { "@type": "Book", "name": "Mia à Guéthary", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-guethary.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 15, "item": { "@type": "Book", "name": "Mia à Bayonne", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-bayonne.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } },
-            { "@type": "ListItem", "position": 16, "item": { "@type": "Book", "name": "Mia à Espelette", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-espelette.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder" } } }
+            { "@type": "ListItem", "position": 1, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-biarritz/#book", "name": "Mia à Biarritz", "url": "https://maisonipuin.fr/livres/mia-a-biarritz/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-biarritz.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/28E00i38ifQN4Ax0Wd0co00" } } },
+            { "@type": "ListItem", "position": 2, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-anglet/#book", "name": "Mia à Anglet", "url": "https://maisonipuin.fr/livres/mia-a-anglet/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-anglet.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/cNibJ08sC5c99UR0Wd0co01" } } },
+            { "@type": "ListItem", "position": 3, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-saint-jean-de-luz/#book", "name": "Mia à Saint-Jean-de-Luz", "url": "https://maisonipuin.fr/livres/mia-a-saint-jean-de-luz/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-saint-jean-de-luz.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/5kQbJ06kueMJ7MJ34l0co02" } } },
+            { "@type": "ListItem", "position": 4, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-bidart/#book", "name": "Mia à Bidart", "url": "https://maisonipuin.fr/livres/mia-a-bidart/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-bidart.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/00waEWcIS4858QN0Wd0co03" } } },
+            { "@type": "ListItem", "position": 5, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-saint-jean-pied-de-port/#book", "name": "Mia à Saint-Jean-Pied-de-Port", "url": "https://maisonipuin.fr/livres/mia-a-saint-jean-pied-de-port/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-saint-jean-pied-de-port.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/aFaaEW10a8olaYVawN0co04" } } },
+            { "@type": "ListItem", "position": 6, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-hendaye/#book", "name": "Mia à Hendaye", "url": "https://maisonipuin.fr/livres/mia-a-hendaye/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-hendaye.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/bJe28q24efQNc2Z48p0co05" } } },
+            { "@type": "ListItem", "position": 7, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-cambo-les-bains/#book", "name": "Mia à Cambo-les-Bains", "url": "https://maisonipuin.fr/livres/mia-a-cambo-les-bains/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-cambo-les-bains.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/14A6oGgZ8dIF0khbAR0co06" } } },
+            { "@type": "ListItem", "position": 8, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-ainhoa/#book", "name": "Mia à Ainhoa", "url": "https://maisonipuin.fr/livres/mia-a-ainhoa/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-ainhoa.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/7sY5kCaAK0VTffb34l0co07" } } },
+            { "@type": "ListItem", "position": 9, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-sare/#book", "name": "Mia à Sare", "url": "https://maisonipuin.fr/livres/mia-a-sare/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-sare.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/6oU00i5gq5c99URawN0co08" } } },
+            { "@type": "ListItem", "position": 10, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-hasparren/#book", "name": "Mia à Hasparren", "url": "https://maisonipuin.fr/livres/mia-a-hasparren/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-hasparren.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/28EbJ0eR00VTd7320h0co09" } } },
+            { "@type": "ListItem", "position": 11, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-la-bastide-clairence/#book", "name": "Mia à La Bastide-Clairence", "url": "https://maisonipuin.fr/livres/mia-a-la-bastide-clairence/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-la-bastide-clairence.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/cNidR838i5c9eb7gVb0co0a" } } },
+            { "@type": "ListItem", "position": 12, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-urrugne/#book", "name": "Mia à Urrugne", "url": "https://maisonipuin.fr/livres/mia-a-urrugne/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-urrugne.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/7sYaEW8sC3416IF9sJ0co0b" } } },
+            { "@type": "ListItem", "position": 13, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-ciboure/#book", "name": "Mia à Ciboure", "url": "https://maisonipuin.fr/livres/mia-a-ciboure/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-ciboure.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/14A9AS4cm0VT9URdIZ0co0c" } } },
+            { "@type": "ListItem", "position": 14, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-guethary/#book", "name": "Mia à Guéthary", "url": "https://maisonipuin.fr/livres/mia-a-guethary/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-guethary.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/8x29AS6kuawt3wt6gx0co0d" } } },
+            { "@type": "ListItem", "position": 15, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-bayonne/#book", "name": "Mia à Bayonne", "url": "https://maisonipuin.fr/livres/mia-a-bayonne/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-bayonne.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/eVq8wO10adIF0kh8oF0co0e" } } },
+            { "@type": "ListItem", "position": 16, "item": { "@type": "Book", "@id": "https://maisonipuin.fr/livres/mia-a-espelette/#book", "name": "Mia à Espelette", "url": "https://maisonipuin.fr/livres/mia-a-espelette/", "bookFormat": "https://schema.org/Paperback", "inLanguage": "fr-FR", "image": "https://maisonipuin.fr/assets/covers/mia-a-espelette.webp", "publisher": { "@id": "https://maisonipuin.fr/#organization" }, "isPartOf": { "@id": "https://maisonipuin.fr/#collection-mia" }, "offers": { "@type": "Offer", "price": "9.99", "priceCurrency": "EUR", "availability": "https://schema.org/PreOrder", "url": "https://buy.stripe.com/4gMcN4fV4eMJffb0Wd0co0f" } } }
           ]
         },
         {
@@ -263,181 +272,243 @@
 
         <div class="book-grid">
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-biarritz.webp" alt="Couverture du livre Mia à Biarritz" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-biarritz/" class="book-card-image">
+              <img src="assets/covers/mia-a-biarritz.webp" alt="Couverture du livre Mia à Biarritz — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Biarritz</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-biarritz/">Mia à Biarritz</a></h3>
               <p>Mia part à la découverte de l'océan, du Rocher de la Vierge et des ruelles colorées.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-biarritz">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-anglet.webp" alt="Couverture du livre Mia à Anglet" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-anglet/" class="book-card-image">
+              <img src="assets/covers/mia-a-anglet.webp" alt="Couverture du livre Mia à Anglet — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Anglet</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-anglet/">Mia à Anglet</a></h3>
               <p>Une aventure entre plages, forêt et promenades en famille.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-anglet">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-saint-jean-de-luz.webp" alt="Couverture du livre Mia à Saint-Jean-de-Luz" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-saint-jean-de-luz/" class="book-card-image">
+              <img src="assets/covers/mia-a-saint-jean-de-luz.webp" alt="Couverture du livre Mia à Saint-Jean-de-Luz — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Saint-Jean-de-Luz</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-saint-jean-de-luz/">Mia à Saint-Jean-de-Luz</a></h3>
               <p>Un voyage doux au bord de la baie et dans les rues animées.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-saint-jean-de-luz">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-bidart.webp" alt="Couverture du livre Mia à Bidart" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-bidart/" class="book-card-image">
+              <img src="assets/covers/mia-a-bidart.webp" alt="Couverture du livre Mia à Bidart — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Bidart</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-bidart/">Mia à Bidart</a></h3>
               <p>Une escapade pleine de vagues, de sentiers et de soleil.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-bidart">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-saint-jean-pied-de-port.webp" alt="Couverture du livre Mia à Saint-Jean-Pied-de-Port" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-saint-jean-pied-de-port/" class="book-card-image">
+              <img src="assets/covers/mia-a-saint-jean-pied-de-port.webp" alt="Couverture du livre Mia à Saint-Jean-Pied-de-Port — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Saint-Jean-Pied-de-Port</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-saint-jean-pied-de-port/">Mia à Saint-Jean-Pied-de-Port</a></h3>
               <p>Une promenade colorée au pied des montagnes basques.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-saint-jean-pied-de-port">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-hendaye.webp" alt="Couverture du livre Mia à Hendaye" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-hendaye/" class="book-card-image">
+              <img src="assets/covers/mia-a-hendaye.webp" alt="Couverture du livre Mia à Hendaye — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Hendaye</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-hendaye/">Mia à Hendaye</a></h3>
               <p>Une histoire lumineuse entre grande plage et horizon bleu.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-hendaye">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-cambo-les-bains.webp" alt="Couverture du livre Mia à Cambo-les-Bains" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-cambo-les-bains/" class="book-card-image">
+              <img src="assets/covers/mia-a-cambo-les-bains.webp" alt="Couverture du livre Mia à Cambo-les-Bains — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Cambo-les-Bains</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-cambo-les-bains/">Mia à Cambo-les-Bains</a></h3>
               <p>Une découverte paisible entre jardins, collines et maisons basques.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-cambo-les-bains">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-ainhoa.webp" alt="Couverture du livre Mia à Ainhoa" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-ainhoa/" class="book-card-image">
+              <img src="assets/covers/mia-a-ainhoa.webp" alt="Couverture du livre Mia à Ainhoa — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Ainhoa</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-ainhoa/">Mia à Ainhoa</a></h3>
               <p>Une aventure dans un village plein de charme et de couleurs.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-ainhoa">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-sare.webp" alt="Couverture du livre Mia à Sare" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-sare/" class="book-card-image">
+              <img src="assets/covers/mia-a-sare.webp" alt="Couverture du livre Mia à Sare — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Sare</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-sare/">Mia à Sare</a></h3>
               <p>Une balade tendre au cœur des paysages et traditions du Pays basque.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-sare">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-hasparren.webp" alt="Couverture du livre Mia à Hasparren" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-hasparren/" class="book-card-image">
+              <img src="assets/covers/mia-a-hasparren.webp" alt="Couverture du livre Mia à Hasparren — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Hasparren</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-hasparren/">Mia à Hasparren</a></h3>
               <p>Une visite joyeuse entre rues de village et collines verdoyantes.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-hasparren">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-la-bastide-clairence.webp" alt="Couverture du livre Mia à La Bastide-Clairence" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-la-bastide-clairence/" class="book-card-image">
+              <img src="assets/covers/mia-a-la-bastide-clairence.webp" alt="Couverture du livre Mia à La Bastide-Clairence — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à La Bastide-Clairence</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-la-bastide-clairence/">Mia à La Bastide-Clairence</a></h3>
               <p>Une histoire comme une promenade dans un village de caractère.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-la-bastide-clairence">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-urrugne.webp" alt="Couverture du livre Mia à Urrugne" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-urrugne/" class="book-card-image">
+              <img src="assets/covers/mia-a-urrugne.webp" alt="Couverture du livre Mia à Urrugne — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Urrugne</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-urrugne/">Mia à Urrugne</a></h3>
               <p>Une aventure entre océan, campagne et grands espaces.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-urrugne">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-ciboure.webp" alt="Couverture du livre Mia à Ciboure" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-ciboure/" class="book-card-image">
+              <img src="assets/covers/mia-a-ciboure.webp" alt="Couverture du livre Mia à Ciboure — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Ciboure</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-ciboure/">Mia à Ciboure</a></h3>
               <p>Une sortie au port, entre maisons colorées et bateaux.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-ciboure">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-guethary.webp" alt="Couverture du livre Mia à Guéthary" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-guethary/" class="book-card-image">
+              <img src="assets/covers/mia-a-guethary.webp" alt="Couverture du livre Mia à Guéthary — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Guéthary</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-guethary/">Mia à Guéthary</a></h3>
               <p>Une petite aventure face aux vagues et aux couchers de soleil.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-guethary">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-bayonne.webp" alt="Couverture du livre Mia à Bayonne" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-bayonne/" class="book-card-image">
+              <img src="assets/covers/mia-a-bayonne.webp" alt="Couverture du livre Mia à Bayonne — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Bayonne</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-bayonne/">Mia à Bayonne</a></h3>
               <p>Une découverte de la ville, de ses couleurs et de ses quais.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-bayonne">Pré-commander</button>
             </div>
           </article>
 
           <article class="book-card reveal">
-            <img src="assets/covers/mia-a-espelette.webp" alt="Couverture du livre Mia à Espelette" loading="lazy" width="900" height="900">
+            <a href="livres/mia-a-espelette/" class="book-card-image">
+              <img src="assets/covers/mia-a-espelette.webp" alt="Couverture du livre Mia à Espelette — livre enfant Pays basque" loading="lazy" width="900" height="900">
+            </a>
             <div class="book-card-content">
               <span class="badge">Pré-commande</span>
-              <h3>Mia à Espelette</h3>
+              <h3><a class="book-card-title" href="livres/mia-a-espelette/">Mia à Espelette</a></h3>
               <p>Une histoire parfumée de piments rouges, de ruelles et de sourires.</p>
               <p class="price">9,99 €</p>
-              <button type="button" class="buy-link">Pré-commander</button>
+              <button type="button" class="buy-link" data-book-slug="mia-a-espelette">Pré-commander</button>
             </div>
           </article>
         </div>
+      </section>
+
+      
+      <section id="explorer-villes" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Par ville</p>
+          <h2>Trouver un livre enfant près de chez vous</h2>
+          <p class="section-lead">
+            Chaque ville du Pays basque mérite son histoire. Explorez nos pages locales ou parcourez le
+            <a href="villes/">guide par commune</a>.
+          </p>
+        </div>
+        <ul class="link-list link-list-columns reveal">
+          <li><a href="villes/biarritz/">Livre enfant Biarritz</a></li>
+          <li><a href="villes/anglet/">Livre enfant Anglet</a></li>
+          <li><a href="villes/saint-jean-de-luz/">Livre enfant Saint-Jean-de-Luz</a></li>
+          <li><a href="villes/bidart/">Livre enfant Bidart</a></li>
+          <li><a href="villes/saint-jean-pied-de-port/">Livre enfant Saint-Jean-Pied-de-Port</a></li>
+          <li><a href="villes/hendaye/">Livre enfant Hendaye</a></li>
+          <li><a href="villes/cambo-les-bains/">Livre enfant Cambo-les-Bains</a></li>
+          <li><a href="villes/ainhoa/">Livre enfant Ainhoa</a></li>
+          <li><a href="villes/sare/">Livre enfant Sare</a></li>
+          <li><a href="villes/hasparren/">Livre enfant Hasparren</a></li>
+          <li><a href="villes/la-bastide-clairence/">Livre enfant La Bastide-Clairence</a></li>
+          <li><a href="villes/urrugne/">Livre enfant Urrugne</a></li>
+          <li><a href="villes/ciboure/">Livre enfant Ciboure</a></li>
+          <li><a href="villes/guethary/">Livre enfant Guéthary</a></li>
+          <li><a href="villes/bayonne/">Livre enfant Bayonne</a></li>
+          <li><a href="villes/espelette/">Livre enfant Espelette</a></li>
+        </ul>
       </section>
 
       <section id="histoire" class="section">
@@ -577,7 +648,7 @@
           <p>Pour pré-commander un livre, envoyez-nous le titre souhaité par email.</p>
         </div>
       </div>
-      <a href="mailto:bonjour@example.com?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">Nous écrire</a>
+      <a href="mailto:bonjour@maisonipuin.fr?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">Nous écrire</a>
     </footer>
 
     <div id="preorder" class="modal" hidden>

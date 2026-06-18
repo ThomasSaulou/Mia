@@ -13,8 +13,17 @@ la collection de livres jeunesse **Mia**.
   et liens de paiement Stripe.
 - `data/stripe-links.json` : liens Stripe publics utilisés par les boutons du
   site une fois générés.
+- `data/site.json` : configuration globale (domaine, email, collection).
+- `data/books-extra.json` : textes longs, FAQ et métadonnées par livre.
+- `data/cities.json` : communes du Pays basque (avec ou sans livre dédié).
+- `data/occasions.json` : pages idées cadeau (naissance, anniversaire…).
+- `scripts/build-site.mjs` : générateur de pages SEO (livres, villes, occasions).
+- `scripts/validate-build.mjs` : vérifie que chaque page a assez de contenu.
 - `scripts/create-stripe-payment-links.mjs` : script local de création des
   produits, prix et Payment Links Stripe.
+- `livres/`, `villes/`, `idees-cadeau/` : pages HTML générées (ne pas éditer à la main).
+- `products.json`, `llms-full.txt` : flux machine-readable pour les IA.
+- `docs/entites/` : kit Wikidata, Goodreads, Amazon, Pinterest, YouTube.
 - `assets/covers/` : couvertures exportées depuis le PDF, une image par livre.
 - `skills/frontend-design/SKILL.md` : skill de design front suivi pour la refonte.
 
@@ -92,6 +101,25 @@ options (le fichier doit d'abord être ajouté au dépôt) :
    `assets/logo-maison-ipuin.svg` (déjà référencé partout). Aucun autre
    changement nécessaire.
 
+## Génération des pages SEO
+
+Après toute modification de `data/*.json` ou des scripts, regénérer le site :
+
+```bash
+node scripts/build-site.mjs
+node scripts/validate-build.mjs
+```
+
+Le build génère automatiquement :
+
+- **16 pages livre** (`/livres/mia-a-biarritz/`…) avec JSON-LD `Book`, FAQ et liens Stripe
+- **38 pages ville** (`/villes/biarritz/`…) dont 22 communes sans livre dédié (recommandation honnête du titre le plus proche)
+- **5 pages occasion** + **80 variantes ville×occasion** (`/idees-cadeau/cadeau-naissance-biarritz/`…)
+- **`sitemap.xml`** (~143 URLs), **`llms.txt`**, **`llms-full.txt`**, **`products.json`**
+- Mise à jour de `index.html` (liens catalogue, JSON-LD, email)
+
+La CI GitHub (`.github/workflows/build.yml`) vérifie que les fichiers générés sont à jour.
+
 ## Référencement (SEO) & moteurs IA (GEO)
 
 Le site est optimisé pour être trouvé à la fois par Google et par les moteurs de
@@ -113,9 +141,11 @@ Ce qui est en place :
 - **`robots.txt`** : autorise explicitement les robots IA (GPTBot, OAI-SearchBot,
   ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended, Applebot-Extended…) et
   référence le sitemap.
-- **`sitemap.xml`** : page d'accueil + images des couvertures.
-- **`llms.txt`** : fiche de synthèse lisible par les IA (qui résume la maison, la
-  collection et pourquoi le site répond aux requêtes cibles).
+- **`sitemap.xml`** : ~143 URLs (accueil, livres, villes, occasions, images).
+- **`llms.txt`** et **`llms-full.txt`** : fiches lisibles par les IA.
+- **`products.json`** : flux produit JSON (prix, URLs, villes).
+- **Pages programmatiques** avec contenu unique (pas de pages vides) : chaque page
+  a au moins 180 mots de texte visible, une FAQ ou des conseils, et du maillage interne.
 
 ### Étapes manuelles recommandées (hors code)
 

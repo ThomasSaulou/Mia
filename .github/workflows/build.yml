@@ -1,0 +1,42 @@
+name: Build site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "styles.css"
+  pull_request:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "styles.css"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate static pages
+        run: node scripts/build-site.mjs
+
+      - name: Validate generated pages
+        run: node scripts/validate-build.mjs
+
+      - name: Check build output is committed
+        run: |
+          git diff --exit-code -- \
+            index.html \
+            sitemap.xml \
+            llms.txt \
+            llms-full.txt \
+            products.json \
+            livres \
+            villes \
+            idees-cadeau

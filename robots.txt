@@ -50,4 +50,9 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+# Fichiers machine-readable pour les IA :
+# /llms.txt — résumé
+# /llms-full.txt — guide complet avec toutes les URLs
+# /products.json — flux produit JSON
+
 Sitemap: https://maisonipuin.fr/sitemap.xml
