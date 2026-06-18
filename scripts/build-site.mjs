@@ -11,10 +11,12 @@ import {
   escapeHtml,
   formatPrice,
   occasionUrl,
+  renderAnswerBox,
   renderBookCard,
   renderBreadcrumbs,
   renderFaq,
   renderPage,
+  renderPullQuote,
   setSiteDomain,
 } from "./lib/html.mjs";
 
@@ -77,6 +79,8 @@ function renderBookPage(book, books, site) {
   const description = `${book.title} : ${book.description} Idée cadeau locale pour enfants de 2 à 8 ans. ${formatPrice(book.unitAmount)}, collection Mia.`;
   const related = book.relatedSlugs.map((slug) => bookBySlug(books, slug));
 
+  const answer = `<strong>${escapeHtml(book.title)}</strong> est un livre pour enfant de la collection Mia (éditions ${escapeHtml(site.name)}), dédié à <strong>${escapeHtml(book.city)}</strong>, au Pays basque. Album illustré pour les ${site.collection.ageMin}-${site.collection.ageMax} ans, ${escapeHtml(book.pages)} en ${escapeHtml(book.interior)}, format ${escapeHtml(book.format)}, au prix de <strong>${escapeHtml(formatPrice(book.unitAmount))}</strong>. Une idée cadeau locale idéale pour une naissance, un anniversaire ou Noël.`;
+
   const buyCta = book.stripeUrl
     ? `<a class="button button-large" href="${escapeHtml(book.stripeUrl)}">Pré-commander — ${escapeHtml(formatPrice(book.unitAmount))}</a>`
     : `<a class="button button-large" href="${prefix}index.html#contact">Pré-commander — ${escapeHtml(formatPrice(book.unitAmount))}</a>`;
@@ -99,6 +103,7 @@ function renderBookPage(book, books, site) {
           </div>
         </div>
       </article>
+${renderAnswerBox(answer)}
 
       <section class="section page-section reveal in">
         <div class="section-heading">
@@ -111,6 +116,10 @@ function renderBookPage(book, books, site) {
             Que ce soit pour une naissance, un anniversaire ou Noël, un livre local a plus de sens qu'un jouet générique :
             l'enfant (ou la famille) s'y reconnaît.
           </p>
+          ${renderPullQuote(
+            "Chaque livre Mia est dédié à une ville du Pays basque : l'idée cadeau la plus locale qui soit pour un enfant.",
+            `${site.name}, maison d'édition jeunesse`
+          )}
           <p>${escapeHtml(book.cityIntro)}</p>
           <p>
             Découvrez aussi notre page
@@ -227,6 +236,11 @@ function renderCityPage(city, books, cities, site) {
     .map((slug) => cities.find((item) => item.slug === slug))
     .filter(Boolean);
 
+  const citiesWithBookCount = cities.filter((item) => item.hasBook).length;
+  const answer = city.hasBook
+    ? `Pour offrir un <strong>livre enfant à ${escapeHtml(city.name)}</strong>, le titre Mia dédié est <strong>${escapeHtml(nearestBook.title)}</strong> : un album illustré pour les ${site.collection.ageMin}-${site.collection.ageMax} ans, ${escapeHtml(nearestBook.pages)}, au prix de <strong>${escapeHtml(formatPrice(nearestBook.unitAmount))}</strong>. ${escapeHtml(city.name)} fait partie des ${citiesWithBookCount} villes du Pays basque dotées d'un titre dédié (collection de ${books.length} livres).`
+    : `Il n'existe pas encore de livre Mia dédié à <strong>${escapeHtml(city.name)}</strong>. Le titre le plus proche est <strong>${escapeHtml(nearestBook.title)}</strong>, à environ ${city.nearestBookDistanceKm} km : un album pour enfants de ${site.collection.ageMin}-${site.collection.ageMax} ans à <strong>${escapeHtml(formatPrice(nearestBook.unitAmount))}</strong>, idée cadeau locale au Pays basque.`;
+
   const content = city.hasBook
     ? `
       <article class="page-hero reveal in">
@@ -335,7 +349,12 @@ function renderCityPage(city, books, cities, site) {
       </section>`
       : "";
 
-  const fullContent = `${content}
+  const contentWithAnswer = content.replace(
+    "</article>",
+    `</article>\n${renderAnswerBox(answer)}`
+  );
+
+  const fullContent = `${contentWithAnswer}
 
       <section class="section page-section reveal in">
         <div class="section-heading">
@@ -413,6 +432,8 @@ function renderOccasionPage(occasion, books, site) {
   const canonicalPath = occasionUrl(occasion.slug);
   const featured = occasion.featuredSlugs.map((slug) => bookBySlug(books, slug));
 
+  const answer = `${escapeHtml(occasion.title)} : un livre de la collection Mia est une <strong>idée cadeau locale</strong> pour un enfant de ${site.collection.ageMin}-${site.collection.ageMax} ans au Pays basque. ${books.length} titres disponibles, un par ville (Biarritz, Bayonne, Espelette…), à <strong>${escapeHtml(formatPrice(books[0].unitAmount))}</strong> l'album, en pré-commande sur ${escapeHtml(site.name)}.`;
+
   const content = `
       <article class="page-hero reveal in">
         <div class="page-hero-copy page-hero-copy-wide">
@@ -421,6 +442,7 @@ function renderOccasionPage(occasion, books, site) {
           <p class="lead">${escapeHtml(occasion.intro)}</p>
         </div>
       </article>
+${renderAnswerBox(answer)}
 
       <section class="section page-section reveal in">
         <div class="section-heading">
@@ -512,6 +534,12 @@ function renderOccasionCityPage(occasion, city, books, site) {
   const title = `${occasion.title} à ${city.name} — livre enfant Pays basque | ${site.name}`;
   const description = `${occasion.title} à ${city.name} : offrez ${book.title}, livre illustré local pour enfants de 2 à 8 ans. Collection Mia, ${formatPrice(book.unitAmount)}.`;
 
+  const answer = `${escapeHtml(occasion.title)} à ${escapeHtml(city.name)} : offrez <strong>${escapeHtml(book.title)}</strong>, un album Mia pour les ${site.collection.ageMin}-${site.collection.ageMax} ans à <strong>${escapeHtml(formatPrice(book.unitAmount))}</strong>. ${
+    city.hasBook
+      ? `Ce titre est entièrement dédié à ${escapeHtml(city.name)} : l'idée cadeau la plus locale possible.`
+      : `C'est le livre le plus proche de ${escapeHtml(city.name)} (environ ${city.nearestBookDistanceKm} km).`
+  }`;
+
   const content = `
       <article class="page-hero reveal in">
         <div class="page-hero-copy page-hero-copy-wide">
@@ -523,6 +551,7 @@ function renderOccasionCityPage(occasion, city, books, site) {
           </p>
         </div>
       </article>
+${renderAnswerBox(answer)}
 
       <section class="section page-section reveal in">
         <div class="book-spotlight">
@@ -620,6 +649,9 @@ function renderCatalogIndex(books, site) {
           </p>
         </div>
       </article>
+${renderAnswerBox(
+    `La collection Mia compte <strong>${books.length} livres pour enfants</strong> sur le Pays basque, un titre par ville (Biarritz, Bayonne, Saint-Jean-de-Luz, Espelette…). Albums illustrés pour les ${site.collection.ageMin}-${site.collection.ageMax} ans, ${escapeHtml(books[0].pages)} couleur, à <strong>${escapeHtml(formatPrice(books[0].unitAmount))}</strong> l'unité. Idée cadeau locale en pré-commande sur ${escapeHtml(site.name)}.`
+  )}
 
       <section class="section page-section reveal in">
         <div class="book-grid">
@@ -678,6 +710,9 @@ function renderCitiesIndex(cities, books, site) {
           </p>
         </div>
       </article>
+${renderAnswerBox(
+    `Pour trouver un <strong>livre enfant selon votre ville</strong> au Pays basque : ${withBook.length} communes ont un titre Mia entièrement dédié, et les ${withoutBook.length} autres villages sont orientés vers le livre le plus proche géographiquement. Albums pour les ${site.collection.ageMin}-${site.collection.ageMax} ans à <strong>${escapeHtml(formatPrice(books[0].unitAmount))}</strong>.`
+  )}
 
       <section class="section page-section reveal in">
         <div class="section-heading">
@@ -745,6 +780,9 @@ function renderOccasionsIndex(occasions, site) {
           </p>
         </div>
       </article>
+${renderAnswerBox(
+    `Un livre de la collection Mia est une <strong>idée cadeau locale</strong> pour un enfant de ${site.collection.ageMin}-${site.collection.ageMax} ans au Pays basque, quelle que soit l'occasion : naissance, anniversaire, Noël, baptême. ${occasions.occasions.length} guides cadeau et 16 titres par ville, dès <strong>9,99 €</strong> l'album.`
+  )}
 
       <section class="section page-section reveal in">
         <ul class="card-list">
@@ -819,7 +857,7 @@ function generateSitemap(urls) {
 function generateProductsJson(books, site) {
   return {
     publisher: site.name,
-    updatedAt: new Date().toISOString(),
+    updatedAt: BUILD_DATE,
     website: site.domain,
     products: books.map((book) => ({
       slug: book.slug,
@@ -952,6 +990,13 @@ async function patchIndexHtml(books, site) {
     /mailto:bonjour@example\.com/g,
     `mailto:${site.email}`
   );
+
+  if (site.bingVerification && !html.includes('name="msvalidate.01"')) {
+    html = html.replace(
+      '<meta name="theme-color" content="#d65a2c">',
+      `<meta name="theme-color" content="#d65a2c">\n    <meta name="msvalidate.01" content="${escapeHtml(site.bingVerification)}">`
+    );
+  }
 
   if (!html.includes('href="/llms.txt"')) {
     html = html.replace(

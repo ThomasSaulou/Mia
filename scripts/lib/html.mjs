@@ -93,6 +93,22 @@ export function renderBookCard(book, stripeUrl, depth, options = {}) {
         </article>`;
 }
 
+export function renderAnswerBox(innerHtml) {
+  return `
+      <section class="answer-box reveal in" aria-label="Réponse en bref">
+        <p class="answer-label">En bref</p>
+        <p>${innerHtml}</p>
+      </section>`;
+}
+
+export function renderPullQuote(text, cite) {
+  return `
+      <figure class="pull-quote reveal in">
+        <blockquote>${escapeHtml(text)}</blockquote>
+        <figcaption>— ${escapeHtml(cite)}</figcaption>
+      </figure>`;
+}
+
 export function renderFaq(faqItems) {
   return faqItems
     .map(
@@ -131,7 +147,7 @@ export function renderPage({
     <meta name="author" content="${escapeHtml(site.name)}">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="theme-color" content="#d65a2c">
-    <link rel="canonical" href="${escapeHtml(canonical)}">
+    ${site.bingVerification ? `<meta name="msvalidate.01" content="${escapeHtml(site.bingVerification)}">\n    ` : ""}<link rel="canonical" href="${escapeHtml(canonical)}">
     <meta name="geo.region" content="${escapeHtml(site.geo.region)}">
     <meta name="geo.placename" content="${escapeHtml(site.geo.placename)}">
     <meta name="geo.position" content="${escapeHtml(site.geo.position)}">
