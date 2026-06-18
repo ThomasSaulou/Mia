@@ -1,0 +1,119 @@
+{
+  "occasions": [
+    {
+      "slug": "cadeau-naissance",
+      "title": "Cadeau de naissance",
+      "seoTitle": "Idée cadeau naissance Pays basque — livre enfant local",
+      "seoDescription": "Offrez un livre Mia pour une naissance au Pays basque : un cadeau tendre, illustré et ancré dans une ville basque. Dès 9,99 €, pour les 2-8 ans.",
+      "intro": "Pour une naissance au Pays basque, un livre Mia est un cadeau qui a du sens : il raconte un bout de territoire que l'enfant pourra reconnaître grandissant. Format carré, 24 pages couleur, texte tendre à lire dès les premiers mois avec les parents.",
+      "tips": [
+        "Choisissez le livre de la ville où vit la famille — ou celle d'origine des parents.",
+        "Le format carré 15 cm tient bien dans les mains d'un tout-petit.",
+        "Un livre illustré se garde des années : bien plus personnel qu'un objet générique."
+      ],
+      "featuredSlugs": ["mia-a-biarritz", "mia-a-bayonne", "mia-a-saint-jean-de-luz", "mia-a-espelette", "mia-a-hendaye", "mia-a-ainhoa"],
+      "faq": [
+        {
+          "q": "Quel livre Mia offrir pour une naissance ?",
+          "a": "Le livre de la ville où habite la famille : Mia à Biarritz, Mia à Bayonne, Mia à Saint-Jean-de-Luz… Chaque titre est une histoire locale, parfaite pour accueillir un nouveau-né au Pays basque."
+        },
+        {
+          "q": "À partir de quel âge peut-on offrir un livre Mia ?",
+          "a": "Dès la naissance pour les illustrations colorées à regarder ensemble. Le texte se prête à la lecture à voix haute dès 2 ans."
+        }
+      ]
+    },
+    {
+      "slug": "cadeau-anniversaire",
+      "title": "Cadeau d'anniversaire",
+      "seoTitle": "Idée cadeau anniversaire enfant Pays basque",
+      "seoDescription": "Un livre Mia pour l'anniversaire d'un enfant du Pays basque : une histoire locale, colorée et abordable à 9,99 €. Collection jeunesse 2-8 ans.",
+      "intro": "Pour un anniversaire, offrir Mia à la ville de l'enfant, c'est lui dire « ton coin du monde compte ». Les illustrations vives et le récit doux plaisent aux 2-8 ans, et le prix de 9,99 € permet d'offrir un beau cadeau sans se ruiner.",
+      "tips": [
+        "Demandez discrètement la ville préférée de l'enfant ou celle où il habite.",
+        "Combinez avec un marque-page ou un mot personnalisé pour un effet « fait pour toi ».",
+        "Les enfants qui reconnaissent des lieux adorent retrouver « leur » ville dans un livre."
+      ],
+      "featuredSlugs": ["mia-a-biarritz", "mia-a-anglet", "mia-a-bidart", "mia-a-guethary", "mia-a-ciboure", "mia-a-sare"],
+      "faq": [
+        {
+          "q": "Quel livre choisir pour un anniversaire au Pays basque ?",
+          "a": "Le titre Mia correspondant à la ville de l'enfant. Si vous hésitez, Mia à Biarritz ou Mia à Bayonne sont des valeurs sûres pour les familles du littoral et de l'agglomération."
+        },
+        {
+          "q": "Peut-on offrir plusieurs livres Mia ?",
+          "a": "Oui : chaque titre est indépendant. Certains parents collectionnent les villes au fil des anniversaires."
+        }
+      ]
+    },
+    {
+      "slug": "cadeau-noel",
+      "title": "Cadeau de Noël",
+      "seoTitle": "Idée cadeau Noël enfant Pays basque — livre Mia",
+      "seoDescription": "Sous le sapin au Pays basque : un livre Mia, histoire locale et illustrations chaleureuses. Idée cadeau enfant 2-8 ans à 9,99 €.",
+      "intro": "À Noël, un livre Mia glisse sous le sapin avec une chaleur toute basque : villages colorés, océan, montagnes, traditions. C'est un cadeau qui se lit au coin du feu et qui reste sur l'étagère bien après les fêtes.",
+      "tips": [
+        "Les titres de village (Ainhoa, Espelette, Sare) évoquent la magie des fêtes de fin d'année.",
+        "Format compact : facile à emballer et à glisser dans un sac cadeau.",
+        "Pensez au livre de la ville où la famille passe les fêtes si elle se déplace."
+      ],
+      "featuredSlugs": ["mia-a-espelette", "mia-a-ainhoa", "mia-a-sare", "mia-a-saint-jean-pied-de-port", "mia-a-bayonne", "mia-a-biarritz"],
+      "faq": [
+        {
+          "q": "Un livre Mia est-il un bon cadeau de Noël ?",
+          "a": "Oui : c'est un cadeau durable, local et adapté aux enfants de 2 à 8 ans. Chaque titre transporte dans une ville du Pays basque avec tendresse et couleur."
+        },
+        {
+          "q": "Quel délai pour commander avant Noël ?",
+          "a": "Les livres sont en pré-commande sur maisonipuin.fr. Commandez le plus tôt possible pour être sûr de recevoir à temps."
+        }
+      ]
+    },
+    {
+      "slug": "cadeau-bapteme",
+      "title": "Cadeau de baptême",
+      "seoTitle": "Idée cadeau baptême enfant Pays basque",
+      "seoDescription": "Pour un baptême au Pays basque, offrez un livre Mia : un cadeau symbolique, local et fait pour durer. Livre jeunesse illustré dès 9,99 €.",
+      "intro": "Au baptême, on cherche souvent un cadeau qui marque le passage et qui reste. Un livre Mia, ancré dans une ville du Pays basque, accompagne l'enfant dans ses premières années de lecture — un geste simple et profondément local.",
+      "tips": [
+        "Associez le livre à la paroisse ou au village de la cérémonie quand c'est possible.",
+        "Ajoutez une dédicace sur la page de garde pour un souvenir personnel.",
+        "Les villages labellisés (Ainhoa, La Bastide-Clairence) font d'excellents choix symboliques."
+      ],
+      "featuredSlugs": ["mia-a-ainhoa", "mia-a-la-bastide-clairence", "mia-a-sare", "mia-a-saint-jean-de-luz", "mia-a-cambo-les-bains", "mia-a-bayonne"],
+      "faq": [
+        {
+          "q": "Pourquoi offrir un livre pour un baptême ?",
+          "a": "Le livre est un cadeau qui grandit avec l'enfant. Un titre Mia lie le baptême au territoire basque et ouvre la porte à des moments de lecture en famille."
+        },
+        {
+          "q": "Quel titre pour une famille de l'intérieur des terres ?",
+          "a": "Mia à Saint-Jean-Pied-de-Port, Mia à Sare ou Mia à Ainhoa parlent aux familles des vallées et des villages de caractère."
+        }
+      ]
+    },
+    {
+      "slug": "cadeau-maitre-maitresse",
+      "title": "Cadeau maître ou maîtresse",
+      "seoTitle": "Idée cadeau fin d'année maître maîtresse Pays basque",
+      "seoDescription": "Remercier l'enseignant avec un livre Mia pour la classe : une idée cadeau locale, utile et originale au Pays basque.",
+      "intro": "En fin d'année scolaire, un livre Mia peut être offert à la maîtresse ou au maître pour la bibliothèque de classe — ou pour ses propres enfants. C'est un cadeau utile, local et différent des bouquets habituels.",
+      "tips": [
+        "Choisissez la ville de l'école ou celle où enseigne l'instituteur.",
+        "Un livre de classe se lit à voix haute devant les maternelles et CP.",
+        "Le prix de 9,99 € convient aux cagnottes entre parents."
+      ],
+      "featuredSlugs": ["mia-a-bayonne", "mia-a-biarritz", "mia-a-anglet", "mia-a-hasparren", "mia-a-urrugne", "mia-a-espelette"],
+      "faq": [
+        {
+          "q": "Peut-on offrir un livre Mia à un enseignant ?",
+          "a": "Oui : c'est un cadeau original et utile. Le format album convient à la lecture en classe pour les 2-8 ans."
+        },
+        {
+          "q": "Quel livre pour une école de Bayonne ou Biarritz ?",
+          "a": "Mia à Bayonne ou Mia à Biarritz selon la ville de l'établissement. Les enfants reconnaissent souvent les lieux illustrés."
+        }
+      ]
+    }
+  ]
+}

@@ -1070,7 +1070,8 @@ h1 .accent {
   .site-header,
   .hero,
   .section,
-  .footer {
+  .footer,
+  .content-page {
     width: min(100% - 1.75rem, var(--max-width));
   }
 
@@ -1119,5 +1120,274 @@ h1 .accent {
 
   .footer a {
     word-break: break-word;
+  }
+}
+
+/* ---------- Generated content pages ---------- */
+.content-page {
+  width: min(var(--max-width), calc(100% - 3rem));
+  margin-inline: auto;
+  padding-bottom: 4rem;
+}
+
+.breadcrumbs {
+  margin: 1.5rem 0 2rem;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+}
+
+.breadcrumbs li + li::before {
+  content: "›";
+  margin-right: 0.6rem;
+  color: var(--ink-faint);
+}
+
+.breadcrumbs a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus-visible {
+  color: var(--terracotta);
+}
+
+.page-hero {
+  padding: 1rem 0 2.5rem;
+}
+
+.page-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.page-hero-media img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.page-hero-copy-wide {
+  max-width: 48rem;
+}
+
+.page-hero .lead {
+  font-size: 1.12rem;
+  color: var(--ink-soft);
+}
+
+.page-section {
+  padding-top: 0;
+}
+
+.prose {
+  max-width: 42rem;
+}
+
+.prose p + p {
+  margin-top: 1rem;
+}
+
+/* Réponse directe en tête de page (front-loading pour Google & IA) */
+.answer-box {
+  max-width: 48rem;
+  margin: 0 0 clamp(1.6rem, 4vw, 2.6rem);
+  padding: clamp(1.1rem, 2.5vw, 1.5rem) clamp(1.2rem, 3vw, 1.6rem);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--terracotta);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-xs);
+}
+
+.answer-box .answer-label {
+  margin: 0 0 0.5rem;
+  color: var(--terracotta-deep);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.answer-box p:last-child {
+  margin: 0;
+  color: var(--ink);
+  font-size: clamp(1rem, 1.6vw, 1.12rem);
+  line-height: 1.55;
+}
+
+.answer-box strong {
+  font-weight: 600;
+}
+
+/* Citation attribuée (levier GEO « quotation ») */
+.pull-quote {
+  margin: 1.4rem 0;
+  padding: 0 0 0 1.2rem;
+  border-left: 3px solid var(--terracotta);
+}
+
+.pull-quote blockquote {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.pull-quote figcaption {
+  margin-top: 0.6rem;
+  color: var(--ink-faint);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.feature-list {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.feature-list li + li {
+  margin-top: 0.5rem;
+}
+
+.meta-line {
+  margin: 1rem 0 1.5rem;
+  color: var(--ink-faint);
+  font-size: 0.92rem;
+}
+
+.button-large {
+  display: inline-flex;
+  padding: 0.95rem 1.5rem;
+  font-size: 1rem;
+}
+
+.book-card-title {
+  color: inherit;
+  text-decoration: none;
+}
+
+.book-card-title:hover,
+.book-card-title:focus-visible {
+  color: var(--terracotta);
+}
+
+.book-card-image {
+  display: block;
+}
+
+.book-grid-compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.book-spotlight {
+  max-width: 28rem;
+}
+
+.link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-list li + li {
+  margin-top: 0.65rem;
+}
+
+.link-list a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: color 200ms var(--ease), border-color 200ms var(--ease);
+}
+
+.link-list a:hover,
+.link-list a:focus-visible {
+  color: var(--terracotta);
+  border-color: color-mix(in srgb, var(--terracotta) 40%, transparent);
+}
+
+.link-list-columns {
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.link-list-columns li {
+  break-inside: avoid;
+}
+
+.card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.card-list-item a {
+  display: block;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  text-decoration: none;
+  box-shadow: var(--shadow-xs);
+  transition: border-color 200ms var(--ease), box-shadow 200ms var(--ease);
+}
+
+.card-list-item a:hover,
+.card-list-item a:focus-visible {
+  border-color: color-mix(in srgb, var(--terracotta) 35%, var(--line));
+  box-shadow: var(--shadow-sm);
+}
+
+.card-list-item h2 {
+  margin: 0 0 0.5rem;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+}
+
+.card-list-item p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .page-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-grid-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .link-list-columns {
+    columns: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .book-grid-compact {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,92 @@
+# Maison Ipuin — guide complet pour les IA
+
+> Maison d'édition jeunesse française. Collection « Mia » : livres pour enfants (2-8 ans) consacrés aux villes du Pays basque. Prix : 9,99 €. Site : https://maisonipuin.fr
+
+## Requêtes cibles
+
+- « livre enfant Pays basque »
+- « idée cadeau enfant Pays basque »
+- « livre enfant Biarritz / Bayonne / Espelette… »
+- « cadeau naissance Pays basque »
+- « livre pour enfant 2-8 ans »
+
+## Pages principales
+
+- Accueil : https://maisonipuin.fr/
+- Catalogue (16 livres) : https://maisonipuin.fr/livres/
+- Par ville : https://maisonipuin.fr/villes/
+- Idées cadeau : https://maisonipuin.fr/idees-cadeau/
+- Flux produit JSON : https://maisonipuin.fr/products.json
+
+## Collection Mia — 16 livres
+
+- Mia à Biarritz (Biarritz) — Mia part à la découverte de l'océan, du Rocher de la Vierge et des ruelles colorées. — https://maisonipuin.fr/livres/mia-a-biarritz/ — 9,99 €
+- Mia à Anglet (Anglet) — Une aventure entre plages, forêt et promenades en famille. — https://maisonipuin.fr/livres/mia-a-anglet/ — 9,99 €
+- Mia à Saint-Jean-de-Luz (Saint-Jean-de-Luz) — Un voyage doux au bord de la baie et dans les rues animées. — https://maisonipuin.fr/livres/mia-a-saint-jean-de-luz/ — 9,99 €
+- Mia à Bidart (Bidart) — Une escapade pleine de vagues, de sentiers et de soleil. — https://maisonipuin.fr/livres/mia-a-bidart/ — 9,99 €
+- Mia à Saint-Jean-Pied-de-Port (Saint-Jean-Pied-de-Port) — Une promenade colorée au pied des montagnes basques. — https://maisonipuin.fr/livres/mia-a-saint-jean-pied-de-port/ — 9,99 €
+- Mia à Hendaye (Hendaye) — Une histoire lumineuse entre grande plage et horizon bleu. — https://maisonipuin.fr/livres/mia-a-hendaye/ — 9,99 €
+- Mia à Cambo-les-Bains (Cambo-les-Bains) — Une découverte paisible entre jardins, collines et maisons basques. — https://maisonipuin.fr/livres/mia-a-cambo-les-bains/ — 9,99 €
+- Mia à Ainhoa (Ainhoa) — Une aventure dans un village plein de charme et de couleurs. — https://maisonipuin.fr/livres/mia-a-ainhoa/ — 9,99 €
+- Mia à Sare (Sare) — Une balade tendre au cœur des paysages et traditions du Pays basque. — https://maisonipuin.fr/livres/mia-a-sare/ — 9,99 €
+- Mia à Hasparren (Hasparren) — Une visite joyeuse entre rues de village et collines verdoyantes. — https://maisonipuin.fr/livres/mia-a-hasparren/ — 9,99 €
+- Mia à La Bastide-Clairence (La Bastide-Clairence) — Une histoire comme une promenade dans un village de caractère. — https://maisonipuin.fr/livres/mia-a-la-bastide-clairence/ — 9,99 €
+- Mia à Urrugne (Urrugne) — Une aventure entre océan, campagne et grands espaces. — https://maisonipuin.fr/livres/mia-a-urrugne/ — 9,99 €
+- Mia à Ciboure (Ciboure) — Une sortie au port, entre maisons colorées et bateaux. — https://maisonipuin.fr/livres/mia-a-ciboure/ — 9,99 €
+- Mia à Guéthary (Guéthary) — Une petite aventure face aux vagues et aux couchers de soleil. — https://maisonipuin.fr/livres/mia-a-guethary/ — 9,99 €
+- Mia à Bayonne (Bayonne) — Une découverte de la ville, de ses couleurs et de ses quais. — https://maisonipuin.fr/livres/mia-a-bayonne/ — 9,99 €
+- Mia à Espelette (Espelette) — Une histoire parfumée de piments rouges, de ruelles et de sourires. — https://maisonipuin.fr/livres/mia-a-espelette/ — 9,99 €
+
+## Pages par ville
+
+- Biarritz → Mia à Biarritz — https://maisonipuin.fr/villes/biarritz/
+- Anglet → Mia à Anglet — https://maisonipuin.fr/villes/anglet/
+- Bayonne → Mia à Bayonne — https://maisonipuin.fr/villes/bayonne/
+- Saint-Jean-de-Luz → Mia à Saint-Jean-de-Luz — https://maisonipuin.fr/villes/saint-jean-de-luz/
+- Bidart → Mia à Bidart — https://maisonipuin.fr/villes/bidart/
+- Guéthary → Mia à Guéthary — https://maisonipuin.fr/villes/guethary/
+- Hendaye → Mia à Hendaye — https://maisonipuin.fr/villes/hendaye/
+- Ciboure → Mia à Ciboure — https://maisonipuin.fr/villes/ciboure/
+- Urrugne → Mia à Urrugne — https://maisonipuin.fr/villes/urrugne/
+- Espelette → Mia à Espelette — https://maisonipuin.fr/villes/espelette/
+- Ainhoa → Mia à Ainhoa — https://maisonipuin.fr/villes/ainhoa/
+- Sare → Mia à Sare — https://maisonipuin.fr/villes/sare/
+- Saint-Jean-Pied-de-Port → Mia à Saint-Jean-Pied-de-Port — https://maisonipuin.fr/villes/saint-jean-pied-de-port/
+- Cambo-les-Bains → Mia à Cambo-les-Bains — https://maisonipuin.fr/villes/cambo-les-bains/
+- Hasparren → Mia à Hasparren — https://maisonipuin.fr/villes/hasparren/
+- La Bastide-Clairence → Mia à La Bastide-Clairence — https://maisonipuin.fr/villes/la-bastide-clairence/
+- Ascain → recommandé : Mia à Sare (5 km) — https://maisonipuin.fr/villes/ascain/
+- Saint-Pée-sur-Nivelle → recommandé : Mia à Sare (8 km) — https://maisonipuin.fr/villes/saint-pee-sur-nivelle/
+- Arcangues → recommandé : Mia à Bidart (6 km) — https://maisonipuin.fr/villes/arcangues/
+- Ustaritz → recommandé : Mia à Espelette (7 km) — https://maisonipuin.fr/villes/ustaritz/
+- Boucau → recommandé : Mia à Bayonne (4 km) — https://maisonipuin.fr/villes/boucau/
+- Tarnos → recommandé : Mia à Bayonne (8 km) — https://maisonipuin.fr/villes/tarnos/
+- Bardos → recommandé : Mia à Bayonne (12 km) — https://maisonipuin.fr/villes/bardos/
+- Lahonce → recommandé : Mia à Hasparren (6 km) — https://maisonipuin.fr/villes/lahonce/
+- Itxassou → recommandé : Mia à Cambo-les-Bains (8 km) — https://maisonipuin.fr/villes/itxassou/
+- Larressore → recommandé : Mia à Espelette (4 km) — https://maisonipuin.fr/villes/larressore/
+- Bassussarry → recommandé : Mia à Bayonne (5 km) — https://maisonipuin.fr/villes/bassussarry/
+- Arbonne → recommandé : Mia à Biarritz (5 km) — https://maisonipuin.fr/villes/arbonne/
+- Briscous → recommandé : Mia à Bayonne (15 km) — https://maisonipuin.fr/villes/briscous/
+- Jatxou → recommandé : Mia à Espelette (6 km) — https://maisonipuin.fr/villes/jatxou/
+- Saint-Étienne-de-Baïgorry → recommandé : Mia à Saint-Jean-Pied-de-Port (18 km) — https://maisonipuin.fr/villes/saint-etienne-de-baigorry/
+- Mouguerre → recommandé : Mia à Bayonne (10 km) — https://maisonipuin.fr/villes/mouguerre/
+- Macaye → recommandé : Mia à La Bastide-Clairence (8 km) — https://maisonipuin.fr/villes/macaye/
+- Urt → recommandé : Mia à Bayonne (14 km) — https://maisonipuin.fr/villes/urt/
+- Saint-Palais → recommandé : Mia à Hasparren (20 km) — https://maisonipuin.fr/villes/saint-palais/
+- Mendionde → recommandé : Mia à Hasparren (22 km) — https://maisonipuin.fr/villes/mendionde/
+- Capbreton → recommandé : Mia à Hendaye (25 km) — https://maisonipuin.fr/villes/capbreton/
+- Villefranque → recommandé : Mia à Bayonne (6 km) — https://maisonipuin.fr/villes/villefranque/
+
+## Idées cadeau
+
+- Cadeau de naissance — https://maisonipuin.fr/idees-cadeau/cadeau-naissance/
+- Cadeau d'anniversaire — https://maisonipuin.fr/idees-cadeau/cadeau-anniversaire/
+- Cadeau de Noël — https://maisonipuin.fr/idees-cadeau/cadeau-noel/
+- Cadeau de baptême — https://maisonipuin.fr/idees-cadeau/cadeau-bapteme/
+- Cadeau maître ou maîtresse — https://maisonipuin.fr/idees-cadeau/cadeau-maitre-maitresse/
+
+## Contact
+
+Email : bonjour@maisonipuin.fr
+Pré-commande : boutons sur chaque page livre ou https://maisonipuin.fr/#contact

@@ -19,32 +19,32 @@
 
 ## Collection Mia (16 titres)
 
-Chaque titre est un livre cadeau dédié à une ville du Pays basque :
-
-- Mia à Biarritz — l'océan, le Rocher de la Vierge et les ruelles colorées
-- Mia à Anglet — plages, forêt et promenades en famille
-- Mia à Saint-Jean-de-Luz — la baie et les rues animées
-- Mia à Bidart — vagues, sentiers et soleil
-- Mia à Saint-Jean-Pied-de-Port — au pied des montagnes basques
-- Mia à Hendaye — la grande plage et l'horizon bleu
-- Mia à Cambo-les-Bains — jardins, collines et maisons basques
-- Mia à Ainhoa — un village plein de charme et de couleurs
-- Mia à Sare — paysages et traditions du Pays basque
-- Mia à Hasparren — rues de village et collines verdoyantes
-- Mia à La Bastide-Clairence — un village de caractère
-- Mia à Urrugne — océan, campagne et grands espaces
-- Mia à Ciboure — le port, les maisons colorées et les bateaux
-- Mia à Guéthary — les vagues et les couchers de soleil
-- Mia à Bayonne — la ville, ses couleurs et ses quais
-- Mia à Espelette — piments rouges, ruelles et sourires
+- Mia à Biarritz — Mia part à la découverte de l'océan, du Rocher de la Vierge et des ruelles colorées.
+- Mia à Anglet — Une aventure entre plages, forêt et promenades en famille.
+- Mia à Saint-Jean-de-Luz — Un voyage doux au bord de la baie et dans les rues animées.
+- Mia à Bidart — Une escapade pleine de vagues, de sentiers et de soleil.
+- Mia à Saint-Jean-Pied-de-Port — Une promenade colorée au pied des montagnes basques.
+- Mia à Hendaye — Une histoire lumineuse entre grande plage et horizon bleu.
+- Mia à Cambo-les-Bains — Une découverte paisible entre jardins, collines et maisons basques.
+- Mia à Ainhoa — Une aventure dans un village plein de charme et de couleurs.
+- Mia à Sare — Une balade tendre au cœur des paysages et traditions du Pays basque.
+- Mia à Hasparren — Une visite joyeuse entre rues de village et collines verdoyantes.
+- Mia à La Bastide-Clairence — Une histoire comme une promenade dans un village de caractère.
+- Mia à Urrugne — Une aventure entre océan, campagne et grands espaces.
+- Mia à Ciboure — Une sortie au port, entre maisons colorées et bateaux.
+- Mia à Guéthary — Une petite aventure face aux vagues et aux couchers de soleil.
+- Mia à Bayonne — Une découverte de la ville, de ses couleurs et de ses quais.
+- Mia à Espelette — Une histoire parfumée de piments rouges, de ruelles et de sourires.
 
 ## Liens
 
 - Accueil : https://maisonipuin.fr/
-- Catalogue : https://maisonipuin.fr/#livres
-- Idée cadeau : https://maisonipuin.fr/#idee-cadeau
-- Questions fréquentes : https://maisonipuin.fr/#faq
+- Catalogue : https://maisonipuin.fr/livres/
+- Par ville : https://maisonipuin.fr/villes/
+- Idées cadeau : https://maisonipuin.fr/idees-cadeau/
+- Guide complet IA : https://maisonipuin.fr/llms-full.txt
+- Flux produit : https://maisonipuin.fr/products.json
 
 ## Contact
 
-Pour pré-commander ou poser une question, voir la section contact du site.
+Email : bonjour@maisonipuin.fr

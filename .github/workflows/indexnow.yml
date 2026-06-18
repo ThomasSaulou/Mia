@@ -1,0 +1,40 @@
+name: IndexNow (Bing)
+
+# Notifie Bing (et donc ChatGPT Search) dès qu'une page change sur main.
+# ChatGPT Search s'appuie à ~87 % sur l'index de Bing : c'est le levier
+# d'indexation le plus rentable et 100 % sous notre contrôle.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "sitemap.xml"
+      - "livres/**"
+      - "villes/**"
+      - "idees-cadeau/**"
+      - "data/**"
+  workflow_dispatch:
+
+# Évite les soumissions concurrentes
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Laisse à GitHub Pages le temps de publier la nouvelle version
+      # (la clé et les URLs doivent être en ligne quand Bing vient vérifier).
+      - name: Wait for GitHub Pages deploy
+        run: sleep 60
+
+      - name: Submit URLs to IndexNow
+        run: node scripts/indexnow-submit.mjs
