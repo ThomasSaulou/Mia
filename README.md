@@ -146,6 +146,40 @@ Ce qui est en place :
 - **`products.json`** : flux produit JSON (prix, URLs, villes).
 - **Pages programmatiques** avec contenu unique (pas de pages vides) : chaque page
   a au moins 180 mots de texte visible, une FAQ ou des conseils, et du maillage interne.
+- **Leviers GEO prouvés** (étude Princeton/KDD 2024, +40 à +115 % de citations IA) :
+  - **Réponse directe en tête de page** (`.answer-box` « En bref ») : ~44 % des
+    citations IA proviennent des premiers 30 % d'une page → on y place une réponse
+    factuelle de 40-80 mots.
+  - **Densité de faits** : chiffres concrets dans la réponse (nombre de titres,
+    tranche d'âge, pages, prix, distance) plutôt que des formules vagues.
+  - **Citation attribuée** (`.pull-quote`) sur les pages livre/ville.
+
+### Indexation instantanée Bing → ChatGPT (IndexNow)
+
+ChatGPT Search s'appuie à **~87 % sur l'index de Bing** (analyses Seer/Profound).
+Le dépôt notifie donc Bing automatiquement via le protocole **IndexNow** :
+
+- **Clé** : `data/site.json` → `indexNowKey`, hébergée à la racine du domaine dans
+  `b7d9f2a4c6e80135a7c9e1b3d5f70824.txt` (publique, ce n'est pas un secret).
+- **Script** : `scripts/indexnow-submit.mjs` lit le `sitemap.xml` et envoie toutes
+  les URLs à `api.indexnow.org` (qui redistribue à Bing, Yandex, Naver…).
+- **Automatisation** : `.github/workflows/indexnow.yml` exécute la soumission à
+  chaque `push` sur `main` qui touche le contenu (après un délai de publication
+  Pages). Déclenchable aussi à la main (« Run workflow »).
+
+Pour **changer la clé** : générez-en une nouvelle (8-128 caractères hexa), mettez
+à jour `data/site.json` **et** renommez le fichier `*.txt` à la racine en
+conséquence.
+
+### Vérification Bing Webmaster Tools
+
+1. Allez sur [Bing Webmaster Tools](https://www.bing.com/webmasters), ajoutez
+   `https://maisonipuin.fr`.
+2. Choisissez la vérification par **balise meta**, copiez le code.
+3. Collez-le dans `data/site.json` → `bingVerification` (ex. `"1234ABCD…"`),
+   relancez `node scripts/build-site.mjs`, commitez. La balise `msvalidate.01`
+   apparaît alors sur toutes les pages.
+4. Soumettez le `sitemap.xml`. (IndexNow accélère ensuite tout le reste.)
 
 ### Étapes manuelles recommandées (hors code)
 
@@ -154,7 +188,8 @@ Pour rendre le référencement réellement « imbattable », ces actions externe
 
 1. **Google Search Console** : ajouter `maisonipuin.fr`, soumettre
    `sitemap.xml`, demander l'indexation.
-2. **Bing Webmaster Tools** : même chose (Bing alimente une partie de ChatGPT).
+2. **Bing Webmaster Tools** : vérifier le site (voir ci-dessus) — clé pour ChatGPT.
+   L'indexation continue est déjà automatisée via IndexNow.
 3. **Google Business Profile** : créer une fiche « Maison Ipuin » (éditeur, Pays
    basque) pour le SEO local.
 4. **Backlinks & citations** : être cité sur des sites locaux (offices de
