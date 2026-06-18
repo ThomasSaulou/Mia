@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://maisonipuin.fr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://maisonipuin.fr/assets/covers/mia-a-biarritz.webp</image:loc>
+      <image:title>Mia à Biarritz — livre enfant Pays basque</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maisonipuin.fr/assets/covers/mia-a-bayonne.webp</image:loc>
+      <image:title>Mia à Bayonne — livre enfant Pays basque</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://maisonipuin.fr/assets/covers/mia-a-espelette.webp</image:loc>
+      <image:title>Mia à Espelette — livre enfant Pays basque</image:title>
+    </image:image>
+  </url>
+</urlset>

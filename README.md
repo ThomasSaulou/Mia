@@ -92,6 +92,46 @@ options (le fichier doit d'abord être ajouté au dépôt) :
    `assets/logo-maison-ipuin.svg` (déjà référencé partout). Aucun autre
    changement nécessaire.
 
+## Référencement (SEO) & moteurs IA (GEO)
+
+Le site est optimisé pour être trouvé à la fois par Google et par les moteurs de
+réponse IA (ChatGPT/SearchGPT, Perplexity, Claude, Gemini…) sur des requêtes
+comme « idée cadeau enfant Pays basque », « livre enfant » ou « livre Pays
+basque ».
+
+Ce qui est en place :
+
+- **Balises `<head>` complètes** : `title` et `description` ciblés sur les
+  mots-clés, `keywords`, `canonical`, `robots`, `theme-color`, balises géo
+  (`geo.region`, `geo.position`), Open Graph et Twitter Card.
+- **Données structurées Schema.org** (JSON-LD) : `Organization`, `WebSite`,
+  `BookSeries`, une `ItemList` des 16 livres (`Book` + `Offer` à 9,99 €) et une
+  `FAQPage`. Ces données aident Google (rich results) et donnent aux IA des faits
+  fiables à citer.
+- **Contenu sémantique** : section « Idée cadeau », section FAQ (questions =
+  requêtes réelles), textes et `alt` d'images enrichis en mots-clés.
+- **`robots.txt`** : autorise explicitement les robots IA (GPTBot, OAI-SearchBot,
+  ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended, Applebot-Extended…) et
+  référence le sitemap.
+- **`sitemap.xml`** : page d'accueil + images des couvertures.
+- **`llms.txt`** : fiche de synthèse lisible par les IA (qui résume la maison, la
+  collection et pourquoi le site répond aux requêtes cibles).
+
+### Étapes manuelles recommandées (hors code)
+
+Pour rendre le référencement réellement « imbattable », ces actions externes sont
+à faire une fois le site déployé :
+
+1. **Google Search Console** : ajouter `maisonipuin.fr`, soumettre
+   `sitemap.xml`, demander l'indexation.
+2. **Bing Webmaster Tools** : même chose (Bing alimente une partie de ChatGPT).
+3. **Google Business Profile** : créer une fiche « Maison Ipuin » (éditeur, Pays
+   basque) pour le SEO local.
+4. **Backlinks & citations** : être cité sur des sites locaux (offices de
+   tourisme, blogs parents, librairies basques, presse locale) — c'est le levier
+   le plus fort pour que les IA recommandent le site.
+5. **Avis clients** une fois les ventes lancées (preuve sociale + signaux SEO).
+
 ## Publication GitHub Pages
 
 Dans les réglages GitHub du dépôt, activez **Pages** avec la branche `main` et le
