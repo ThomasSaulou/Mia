@@ -3,7 +3,7 @@
 ## Choix de production
 
 - Plateforme : Amazon KDP
-- Type : livre broche / paperback
+- Type : livre agrafe
 - Format interieur : 21 x 21 cm
 - Equivalent pouces : environ 8,25" x 8,25" (carre KDP le plus proche)
 - Nombre de pages : 24 pages

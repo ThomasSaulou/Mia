@@ -49,7 +49,7 @@ indicatif et un bouton `Pré-commander`. Le hero met en avant un visuel
 « collection » (plusieurs couvertures en éventail) plutôt qu'un seul livre, pour
 ne pas faire doublon avec la première carte du catalogue. Le catalogue affiche
 aussi le format retenu pour les premiers tests : 21 x 21 cm, 24 pages,
-intérieur couleur, broché KDP.
+intérieur couleur, agrafé.
 
 ## Vente avec Stripe Payment Links
 

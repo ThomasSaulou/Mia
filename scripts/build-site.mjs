@@ -1032,7 +1032,7 @@ function generateLlmsSummary(books, site) {
 - Activité : édition de livres pour enfants (littérature jeunesse)
 - Thème : le Pays basque (Pyrénées-Atlantiques, France)
 - Public : enfants de ${site.collection.ageMin} à ${site.collection.ageMax} ans, et adultes cherchant une idée cadeau
-- Prix : ${formatPrice(books[0].unitAmount)} par livre — format carré ${books[0].format}, 24 pages couleur, broché
+- Prix : ${formatPrice(books[0].unitAmount)} par livre — format carré ${books[0].format}, 24 pages couleur, agrafé
 - Disponibilité : pré-commande sur le site
 
 ## Pourquoi c'est une bonne réponse aux recherches courantes
