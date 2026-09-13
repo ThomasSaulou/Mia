@@ -114,8 +114,9 @@ Le build génère automatiquement :
 
 - **16 pages livre** (`/livres/mia-a-biarritz/`…) avec JSON-LD `Book`, FAQ et liens Stripe
 - **38 pages ville** (`/villes/biarritz/`…) dont 22 communes sans livre dédié (recommandation honnête du titre le plus proche)
+- **1 page guide SEO** (`/livre-enfant-pays-basque/`) : par ville, idée cadeau et FAQ
 - **5 pages occasion** + **80 variantes ville×occasion** (`/idees-cadeau/cadeau-naissance-biarritz/`…)
-- **`sitemap.xml`** (~143 URLs), **`llms.txt`**, **`llms-full.txt`**, **`products.json`**
+- **`sitemap.xml`** (~144 URLs), **`llms.txt`**, **`llms-full.txt`**, **`products.json`**
 - Mise à jour de `index.html` (liens catalogue, JSON-LD, email)
 
 La CI GitHub (`.github/workflows/build.yml`) vérifie que les fichiers générés sont à jour.
@@ -141,7 +142,7 @@ Ce qui est en place :
 - **`robots.txt`** : autorise explicitement les robots IA (GPTBot, OAI-SearchBot,
   ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended, Applebot-Extended…) et
   référence le sitemap.
-- **`sitemap.xml`** : ~143 URLs (accueil, livres, villes, occasions, images).
+- **`sitemap.xml`** : ~144 URLs (accueil, livres, villes, occasions, guide SEO, images).
 - **`llms.txt`** et **`llms-full.txt`** : fiches lisibles par les IA.
 - **`products.json`** : flux produit JSON (prix, URLs, villes).
 - **Pages programmatiques** avec contenu unique (pas de pages vides) : chaque page

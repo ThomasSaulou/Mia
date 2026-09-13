@@ -189,7 +189,7 @@ ${JSON.stringify(jsonLd, null, 2)}
         <a href="${prefix}livres/">Catalogue</a>
         <a href="${prefix}villes/">Par ville</a>
         <a href="${prefix}idees-cadeau/">Idées cadeau</a>
-        <a href="${prefix}index.html#faq">FAQ</a>
+        <a href="${prefix}livre-enfant-pays-basque/#faq">FAQ</a>
         <a href="${prefix}index.html#contact">Contact</a>
       </nav>
     </header>

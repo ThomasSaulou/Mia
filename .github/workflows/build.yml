@@ -39,4 +39,5 @@ jobs:
             products.json \
             livres \
             villes \
-            idees-cadeau
+            idees-cadeau \
+            livre-enfant-pays-basque

@@ -14,6 +14,7 @@
 
 - Accueil : https://maisonipuin.fr/
 - Catalogue (16 livres) : https://maisonipuin.fr/livres/
+- Guide SEO (villes, idées cadeau, FAQ) : https://maisonipuin.fr/livre-enfant-pays-basque/
 - Par ville : https://maisonipuin.fr/villes/
 - Idées cadeau : https://maisonipuin.fr/idees-cadeau/
 - Flux produit JSON : https://maisonipuin.fr/products.json

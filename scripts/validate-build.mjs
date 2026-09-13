@@ -59,7 +59,9 @@ async function validateFile(filePath) {
 }
 
 async function main() {
-  const dirs = ["livres", "villes", "idees-cadeau"].map((dir) => path.join(ROOT, dir));
+  const dirs = ["livres", "villes", "idees-cadeau", "livre-enfant-pays-basque"].map((dir) =>
+    path.join(ROOT, dir)
+  );
   const files = [];
   for (const dir of dirs) {
     files.push(...(await walkHtmlFiles(dir)));

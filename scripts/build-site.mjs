@@ -880,6 +880,143 @@ function generateProductsJson(books, site) {
   };
 }
 
+function renderGuidePage(books, faqItems, site) {
+  const depth = 1;
+  const prefix = assetPrefix(depth);
+  const canonicalPath = "/livre-enfant-pays-basque/";
+  const title = `Livre enfant Pays basque — idée cadeau par ville | ${site.name}`;
+  const description = `Trouvez un livre enfant au Pays basque : par ville (Biarritz, Bayonne, Espelette…), idées cadeau et questions fréquentes. Collection Mia dès ${formatPrice(books[0].unitAmount)}.`;
+  const answer = `La collection Mia propose <strong>${books.length} livres pour enfants</strong> consacrés aux villes du Pays basque. Chaque album est une <strong>idée cadeau locale</strong> pour les ${site.collection.ageMin}-${site.collection.ageMax} ans, format carré ${escapeHtml(books[0].format)}, ${escapeHtml(books[0].pages)} couleur, à <strong>${escapeHtml(formatPrice(books[0].unitAmount))}</strong>.`;
+
+  const cityLinks = books
+    .map((book) => `<li><a href="${prefix}villes/${book.citySlug}/">Livre enfant ${escapeHtml(book.city)}</a></li>`)
+    .join("\n          ");
+
+  const content = `
+      <article class="page-hero reveal in">
+        <div class="page-hero-copy page-hero-copy-wide">
+          <p class="eyebrow">Guide</p>
+          <h1>Livre enfant Pays basque</h1>
+          <p class="lead">
+            Un album Mia pour la ville qui compte, une idée cadeau locale dès ${escapeHtml(formatPrice(books[0].unitAmount))},
+            et les réponses aux questions les plus fréquentes.
+          </p>
+        </div>
+      </article>
+${renderAnswerBox(answer)}
+
+      <section id="explorer-villes" class="section page-section reveal in">
+        <div class="section-heading">
+          <p class="eyebrow">Par ville</p>
+          <h2>Trouver un livre enfant près de chez vous</h2>
+          <p class="section-lead">
+            Chaque ville du Pays basque mérite son histoire. Explorez nos pages locales ou parcourez le
+            <a href="${prefix}villes/">guide par commune</a>.
+          </p>
+        </div>
+        <ul class="link-list link-list-columns">
+          ${cityLinks}
+        </ul>
+      </section>
+
+      <section id="idee-cadeau" class="section page-section reveal in" aria-labelledby="gift-title">
+        <div class="section-head">
+          <p class="eyebrow">Idée cadeau</p>
+          <h2 id="gift-title">Le cadeau idéal pour un enfant qui aime le Pays basque</h2>
+          <p>
+            Vous cherchez une <strong>idée cadeau pour un enfant</strong> au Pays
+            basque ? Un <strong>livre pour enfant</strong> de la collection Mia
+            est un cadeau personnel, local et durable&nbsp;: on choisit la ville
+            qui compte pour la famille et on offre une histoire à lire et relire.
+          </p>
+        </div>
+        <div class="gift-grid">
+          <article class="gift-card">
+            <h3>Un cadeau local et personnel</h3>
+            <p>
+              Chaque <strong>livre Pays basque</strong> est dédié à une ville :
+              Biarritz, Bayonne, Saint-Jean-de-Luz, Espelette, Hendaye… Offrez
+              celle où l'enfant est né, vit ou passe ses vacances.
+            </p>
+          </article>
+          <article class="gift-card">
+            <h3>Parfait dès ${site.collection.ageMin} ans</h3>
+            <p>
+              Un texte tendre à lire ensemble et de grandes illustrations
+              colorées : un <strong>livre enfant</strong> idéal pour une
+              naissance, un anniversaire ou Noël, pour les ${site.collection.ageMin} à ${site.collection.ageMax} ans.
+            </p>
+          </article>
+          <article class="gift-card">
+            <h3>Un petit prix</h3>
+            <p>
+              ${escapeHtml(formatPrice(books[0].unitAmount))} le livre, au format carré ${escapeHtml(books[0].format)}, ${escapeHtml(books[0].pages)} couleur. Une
+              <strong>idée cadeau</strong> qui fait toujours plaisir sans se
+              ruiner.
+            </p>
+          </article>
+        </div>
+        <p class="gift-cta">
+          <a class="button" href="${prefix}livres/">Choisir un livre cadeau</a>
+        </p>
+      </section>
+
+      <section id="faq" class="section page-section reveal in" aria-labelledby="faq-title">
+        <div class="section-head">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 id="faq-title">Livre enfant &amp; idée cadeau au Pays basque</h2>
+          <p>
+            Tout ce qu'il faut savoir pour offrir le bon livre jeunesse sur le
+            Pays basque.
+          </p>
+        </div>
+        <div class="faq-list">
+          ${renderFaq(faqItems)}
+        </div>
+      </section>`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": absoluteUrl(`${canonicalPath}#page`),
+        url: absoluteUrl(canonicalPath),
+        name: title,
+        description,
+        isPartOf: { "@id": `${site.domain}/#website` },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": absoluteUrl(`${canonicalPath}#faq`),
+        mainEntity: faqItems.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      },
+    ],
+  };
+
+  return renderPage({
+    site,
+    depth,
+    title,
+    description,
+    canonicalPath,
+    ogImage: `/assets/covers/${books[0].slug}.webp`,
+    jsonLd,
+    breadcrumbs: renderBreadcrumbs(
+      [
+        { label: "Accueil", href: "/" },
+        { label: "Livre enfant Pays basque", href: canonicalPath },
+      ],
+      depth
+    ),
+    content,
+  });
+}
+
 function generateLlmsSummary(books, site) {
   const bookLines = books
     .map((book) => `- ${book.title} — ${book.description}`)
@@ -912,6 +1049,7 @@ ${bookLines}
 
 - Accueil : ${absoluteUrl("/")}
 - Catalogue : ${absoluteUrl("/livres/")}
+- Guide SEO (villes, idées cadeau, FAQ) : ${absoluteUrl("/livre-enfant-pays-basque/")}
 - Par ville : ${absoluteUrl("/villes/")}
 - Idées cadeau : ${absoluteUrl("/idees-cadeau/")}
 - Guide complet IA : ${absoluteUrl("/llms-full.txt")}
@@ -960,6 +1098,7 @@ function generateLlmsFull(books, cities, occasions, site) {
 
 - Accueil : ${absoluteUrl("/")}
 - Catalogue (16 livres) : ${absoluteUrl("/livres/")}
+- Guide SEO (villes, idées cadeau, FAQ) : ${absoluteUrl("/livre-enfant-pays-basque/")}
 - Par ville : ${absoluteUrl("/villes/")}
 - Idées cadeau : ${absoluteUrl("/idees-cadeau/")}
 - Flux produit JSON : ${absoluteUrl("/products.json")}
@@ -1046,32 +1185,30 @@ ${books
   }
   html = html.replace(bookGridPattern, newBookGrid);
 
-  if (!html.includes('id="explorer-villes"')) {
-    const citiesSection = `
-      <section id="explorer-villes" class="section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Par ville</p>
-          <h2>Trouver un livre enfant près de chez vous</h2>
-          <p class="section-lead">
-            Chaque ville du Pays basque mérite son histoire. Explorez nos pages locales ou parcourez le
-            <a href="villes/">guide par commune</a>.
-          </p>
-        </div>
-        <ul class="link-list link-list-columns reveal">
-          ${books
-            .map(
-              (book) =>
-                `<li><a href="villes/${book.citySlug}/">Livre enfant ${escapeHtml(book.city)}</a></li>`
-            )
-            .join("\n          ")}
-        </ul>
-      </section>`;
+  html = html.replace(/\s*<section id="explorer-villes"[\s\S]*?<\/section>/, "");
+  html = html.replace(/\s*<section id="idee-cadeau"[\s\S]*?<\/section>/, "");
+  html = html.replace(/\s*<section id="faq"[\s\S]*?<\/section>/, "");
+  html = html.replace(
+    /,\s*\{\s*"@type": "FAQPage",[\s\S]*?\n        \}\n      \]/,
+    "\n      ]"
+  );
 
+  html = html.replace(
+    /<nav class="nav" aria-label="Navigation principale">[\s\S]*?<\/nav>/,
+    `<nav class="nav" aria-label="Navigation principale">
+        <a href="#livres">Catalogue</a>
+        <a href="#histoire">La maison</a>
+        <a href="#contact">Contact</a>
+      </nav>`
+  );
+
+  if (!html.includes("livre-enfant-pays-basque")) {
     html = html.replace(
-      '<section id="histoire" class="section">',
-      `${citiesSection}
-
-      <section id="histoire" class="section">`
+      `<a href="mailto:${site.email}?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">Nous écrire</a>`,
+      `<div class="footer-links">
+        <a href="livre-enfant-pays-basque/">Par ville &amp; idées cadeau</a>
+        <a href="mailto:${site.email}?subject=Pr%C3%A9-commande%20d%27un%20livre%20Mia">Nous écrire</a>
+      </div>`
     );
   }
 
@@ -1095,6 +1232,7 @@ async function main() {
   const site = await readJson("data/site.json");
   const catalog = await readJson("data/stripe-books.json");
   const extra = await readJson("data/books-extra.json");
+  const faqData = await readJson("data/faq.json");
   const stripeLinks = await readJson("data/stripe-links.json");
   const citiesData = await readJson("data/cities.json");
   const occasionsData = await readJson("data/occasions.json");
@@ -1130,6 +1268,10 @@ async function main() {
   }
 
   await writeOutput("idees-cadeau/index.html", renderOccasionsIndex(occasionsData, site));
+  await writeOutput(
+    "livre-enfant-pays-basque/index.html",
+    renderGuidePage(books, faqData.items, site)
+  );
 
   const citiesWithBook = cities.filter((city) => city.hasBook);
   for (const occasion of occasionsData.occasions) {
@@ -1148,6 +1290,7 @@ async function main() {
     { loc: absoluteUrl("/livres/"), priority: "0.9", changefreq: "weekly" },
     { loc: absoluteUrl("/villes/"), priority: "0.8", changefreq: "weekly" },
     { loc: absoluteUrl("/idees-cadeau/"), priority: "0.8", changefreq: "weekly" },
+    { loc: absoluteUrl("/livre-enfant-pays-basque/"), priority: "0.8", changefreq: "weekly" },
     ...books.map((book) => ({
       loc: absoluteUrl(bookUrl(book.slug)),
       priority: "0.9",
@@ -1183,7 +1326,7 @@ async function main() {
   await patchIndexHtml(books, site);
 
   const total =
-    stats.books + stats.cities + stats.occasions + stats.occasionCities + 4;
+    stats.books + stats.cities + stats.occasions + stats.occasionCities + 5;
   console.log(`Build complete (${BUILD_DATE})`);
   console.log(`  Book pages:          ${stats.books}`);
   console.log(`  City pages:          ${stats.cities}`);

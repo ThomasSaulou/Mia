@@ -40,6 +40,7 @@
 
 - Accueil : https://maisonipuin.fr/
 - Catalogue : https://maisonipuin.fr/livres/
+- Guide SEO (villes, idées cadeau, FAQ) : https://maisonipuin.fr/livre-enfant-pays-basque/
 - Par ville : https://maisonipuin.fr/villes/
 - Idées cadeau : https://maisonipuin.fr/idees-cadeau/
 - Guide complet IA : https://maisonipuin.fr/llms-full.txt
