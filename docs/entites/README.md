@@ -77,7 +77,7 @@ Description (7 premières lignes cruciales) :
 > La petite héroïne découvre l'océan, le Rocher de la Vierge et les ruelles colorées.
 > Idée cadeau locale parfaite pour une famille de Biarritz.
 > Collection Mia – Maison Ipuin, maison d'édition jeunesse du Pays basque.
-> Format 15,24 x 15,24 cm, 24 pages couleur.
+> Format 21 x 21 cm, 24 pages couleur.
 
 Mots-clés backend : livre enfant, Pays basque, Biarritz, idée cadeau, livre illustré
 

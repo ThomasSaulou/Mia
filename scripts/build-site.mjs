@@ -592,7 +592,7 @@ ${renderAnswerBox(answer)}
           </p>
           <p>
             La collection Mia est éditée par ${escapeHtml(site.name)} : des albums illustrés pour les
-            ${site.collection.ageMin}-${site.collection.ageMax} ans, format carré 15,24 cm, 24 pages couleur,
+            ${site.collection.ageMin}-${site.collection.ageMax} ans, format carré ${escapeHtml(book.format)}, 24 pages couleur,
             au prix de ${escapeHtml(formatPrice(book.unitAmount))}.
           </p>
         </div>
@@ -895,7 +895,7 @@ function generateLlmsSummary(books, site) {
 - Activité : édition de livres pour enfants (littérature jeunesse)
 - Thème : le Pays basque (Pyrénées-Atlantiques, France)
 - Public : enfants de ${site.collection.ageMin} à ${site.collection.ageMax} ans, et adultes cherchant une idée cadeau
-- Prix : ${formatPrice(books[0].unitAmount)} par livre — format carré 15,24 x 15,24 cm, 24 pages couleur, broché
+- Prix : ${formatPrice(books[0].unitAmount)} par livre — format carré ${books[0].format}, 24 pages couleur, broché
 - Disponibilité : pré-commande sur le site
 
 ## Pourquoi c'est une bonne réponse aux recherches courantes

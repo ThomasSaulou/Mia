@@ -1,6 +1,6 @@
 {
   "publisher": "Maison Ipuin",
-  "updatedAt": "2026-06-18",
+  "updatedAt": "2026-09-13",
   "website": "https://maisonipuin.fr",
   "products": [
     {
@@ -17,7 +17,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/biarritz/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -35,7 +35,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/anglet/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -53,7 +53,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/saint-jean-de-luz/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -71,7 +71,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/bidart/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -89,7 +89,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/saint-jean-pied-de-port/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -107,7 +107,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/hendaye/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -125,7 +125,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/cambo-les-bains/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -143,7 +143,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/ainhoa/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -161,7 +161,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/sare/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -179,7 +179,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/hasparren/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -197,7 +197,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/la-bastide-clairence/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -215,7 +215,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/urrugne/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -233,7 +233,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/ciboure/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -251,7 +251,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/guethary/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -269,7 +269,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/bayonne/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     },
@@ -287,7 +287,7 @@
       "cityUrl": "https://maisonipuin.fr/villes/espelette/",
       "ageMin": 2,
       "ageMax": 8,
-      "format": "15,24 x 15,24 cm",
+      "format": "21 x 21 cm",
       "pages": "24 pages",
       "collection": "Mia"
     }
